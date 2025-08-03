@@ -33,13 +33,32 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
+      - name: Debug directory structure
+        run: |
+          echo "Current directory: $(pwd)"
+          echo "Listing repository root:"
+          ls -la
+          echo "Listing web directory:"
+          ls -la web/
+          
       - name: Build Hugo site
-        run: hugo -s web --destination ./public -D
+        run: |
+          cd web
+          hugo --minify --destination ../public
+        
+      - name: Verify public directory
+        run: |
+          echo "Checking if public directory exists:"
+          ls -la
+          echo "Checking public directory content:"
+          ls -la public || echo "Public directory not found!"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
+          name: github-pages
+          retention-days: 1
 
   deploy:
     needs: build
