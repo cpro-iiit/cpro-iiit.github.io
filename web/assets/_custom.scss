@@ -1,0 +1,11 @@
+/* Custom dark theme styles */
+
+body[data-theme="dark"] {
+  // Custom dark theme styles can go here
+}
+
+// You can also override variables from _defaults.scss
+:root {
+  // Example: changing the link color in dark mode
+  --color-link: #84b2ff;
+}

@@ -1,9 +1,10 @@
 ---
-title: C Library Reference
-menu:
-  after:
-    name: lib_reference
-    weight: 7
+title: "C Library Reference"
+bookHidden: false
+weight: 30
+marp: false
+header: 'CS0.101 Computer Programming (Monsoon 24)'
+footer: '![width:150px](IIIT_Hyderabad_Logo.jpg)'
 ---
 # C Library Reference
 

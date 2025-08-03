@@ -1,12 +1,11 @@
-+++
-title = "Installing GCC"
-date = "2023-08-05"
-tags = [
-    "gcc",
-    "setup",
-]
-weight = 1
-+++
+---
+title: "Installing GCC"
+bookHidden: false
+weight: 50
+marp: false
+header: 'CS0.101 Computer Programming (Monsoon 24)'
+footer: '![width:150px](IIIT_Hyderabad_Logo.jpg)'
+---
 
 # Installing gcc
 
@@ -28,7 +27,7 @@ Check if gcc is installed on Ubuntu by running the command:
 
 If running this shows a version (For eg 13.1 or say any other version) then you are good to go.
 
-Otherwise, if you see an error that reads “command not found” or something similar, run the following commands:
+Otherwise, if you see an error that reads "command not found" or something similar, run the following commands:
 
 `$ sudo apt update`
 
@@ -69,4 +68,3 @@ Alternatively, you can install [WSL](https://ubuntu.com/tutorials/install-ubuntu
 
 {{< /tab >}}
 {{< /tabs >}}
-

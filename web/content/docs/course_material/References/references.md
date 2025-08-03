@@ -1,9 +1,10 @@
 ---
-title: References
-menu:
-  after:
-    name: references
-    weight: 3
+title: "Online Courses"
+bookHidden: false
+weight: 20
+marp: false
+header: 'CS0.101 Computer Programming (Monsoon 24)'
+footer: '![width:150px](IIIT_Hyderabad_Logo.jpg)'
 ---
 
 # References

@@ -1,6 +1,6 @@
 ---
 title: "Problems"
-bookHidden: false
+bookHidden: true
 ---
 # Practice Problems
 

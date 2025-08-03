@@ -1,10 +1,4 @@
 ---
-# title: Writing Code
-menu:
-  after:
-    name: writing_code
-    weight: 7
-
 title: Writing Code
 bookHidden: false
 marp: true

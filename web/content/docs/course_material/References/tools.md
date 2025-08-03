@@ -1,9 +1,10 @@
 ---
-title: Tools for the Shell
-menu:
-  after:
-    name: tools
-    weight: 1
+title: "Tools for the shell"
+bookHidden: false
+weight: 10
+marp: false
+header: 'CS0.101 Computer Programming (Monsoon 24)'
+footer: '![width:150px](IIIT_Hyderabad_Logo.jpg)'
 ---
 
 Most of our lectures/labs are self contained, with all information presented. However you can find more info on those or more tools for the shell bellow. Learning these tools would be helpful to you throughout your career as a CS engineer/scientist.

@@ -1,6 +1,6 @@
 ---
 title: "4"
-bookHidden: false
+bookHidden: true
 ---
 # Practice problems 
 

@@ -1,6 +1,6 @@
 ---
 title: "L-11: Contiguous Sequences, Row Major, Column Major"
-bookHidden: false
+bookHidden: true
 marp: true
 header: 'CS0.101 Computer Programming (Monsoon 24)'
 footer: '![width:125px](IIIT_Hyderabad_Logo.jpg)'

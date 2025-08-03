@@ -1,6 +1,6 @@
 ---
 title: "L-02: Constants, Data Types, Expressions"
-bookHidden: false
+bookHidden: true
 marp: true
 header: 'CS0.101 Computer Programming (Monsoon 24)'
 footer: '![width:100px](IIIT_Hyderabad_Logo.jpg)'

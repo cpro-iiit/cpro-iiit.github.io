@@ -1,6 +1,6 @@
 ---
 title: "L-08: Break, Continue, Type casting, Static, Global and Local Variables"
-bookHidden: false
+bookHidden: true
 marp: true
 header: 'CS0.101 Computer Programming (Monsoon 24)'
 footer: '![width:125px](IIIT_Hyderabad_Logo.jpg)'

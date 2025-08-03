@@ -1,6 +1,6 @@
 ---
 title: "L28: File I/O II"
-bookHidden: false
+bookHidden: true
 marp: true
 header: 'CS0.101 Computer Programming (Monsoon 24)'
 revealjs_config:
