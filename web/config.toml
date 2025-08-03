@@ -22,10 +22,9 @@ enableGitInfo = true
   weight = 10
 
 [params]
-  # (Optional, default light) Sets color theme: light, dark or auto.
-  # Theme 'auto' switches between dark and light modes based on browser/os preferences
+  # Theme (light/dark/auto)
   BookTheme = 'light'
-  
+
   # Table of contents visibility
   BookToC = true
 
@@ -46,3 +45,6 @@ enableGitInfo = true
 
   # Enable comments (requires Disqus setup)
   BookComments = true
+
+  # ✅ Required by Hugo Book theme: SCSS file name (must be present even if unused)
+  Sass = "book.scss"
