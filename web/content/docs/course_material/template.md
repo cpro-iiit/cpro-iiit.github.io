@@ -42,7 +42,7 @@ Lorem markdownum insigne...
 
 ## Expand
 
-{{< expand >}}
+{{< details >}}
 ## Markdown content
 Lorem markdownum insigne...
 {{< /expand >}}

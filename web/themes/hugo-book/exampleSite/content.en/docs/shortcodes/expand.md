@@ -12,7 +12,7 @@ Lorem markdownum insigne...
 {{</* /expand */>}}
 ```
 
-{{< expand >}}
+{{< details >}}
 ## Markdown content
 Lorem markdownum insigne...
 {{< /expand >}}
