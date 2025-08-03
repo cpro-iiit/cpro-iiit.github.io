@@ -35,7 +35,14 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Build Hugo site
-        run: hugo -s web --destination public
+        run: hugo -s web --destination ./public -D
+
+    - name: Debug: list contents
+      run: |
+        echo "Root directory:"
+        ls -alh
+        echo "Public directory:"
+        ls -alh ./public || echo "❌ ./public not found"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
