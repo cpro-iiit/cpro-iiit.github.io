@@ -1,4 +1,4 @@
-baseURL = 'https://cpro-iiit.github.io/CPro-IIITH-M25/'
+baseURL = 'https://cpro-iiit.github.io'
 languageCode = 'en-us'
 title = 'CPro Mon 25'
 theme = 'hugo-book'
