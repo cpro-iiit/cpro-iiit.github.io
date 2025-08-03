@@ -1,4 +1,4 @@
-baseURL = 'https://cpro-iiit.github.io'
+baseURL = 'https://cpro-iiit.github.io/CPro-IIITH-M25/'
 languageCode = 'en-us'
 title = 'CPro Mon 25'
 theme = 'hugo-book'
@@ -28,7 +28,7 @@ enableGitInfo = true
   # Table of contents visibility
   BookToC = true
 
-  # Logo path (static/logo1.png)
+  # Logo path (put logo in web/static/logo1.png)
   BookLogo = 'logo1.png'
 
   # Root section shown in sidebar
@@ -43,8 +43,8 @@ enableGitInfo = true
   # Enable search bar
   BookSearch = true
 
-  # Enable comments (requires Disqus setup)
-  BookComments = true
+  # Enable comments (requires Disqus setup — leave as false if unused)
+  BookComments = false
 
-  # ✅ Required by Hugo Book theme: SCSS file name (must be present even if unused)
+  # Required by Hugo Book theme
   Sass = "book.scss"
