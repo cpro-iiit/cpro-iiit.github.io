@@ -2,7 +2,6 @@ baseURL = 'https://cpro-iiit.github.io'
 languageCode = 'en-us'
 title = 'CPro Mon 25'
 theme = 'hugo-book'
-# Book configuration
 disablePathToLower = true
 enableGitInfo = true
 
@@ -10,59 +9,40 @@ enableGitInfo = true
 [markup]
   [markup.highlight]
     style = 'monokailight'
-    
-[markup.goldmark.renderer]
-  unsafe = true
 
+  [markup.goldmark.renderer]
+    unsafe = true
 
-[markup.tableOfContents]
-  startLevel = 1
+  [markup.tableOfContents]
+    startLevel = 1
 
-  
 [[menu.after]]
   name = "Github"
   url = "https://github.com/cpro-iiit/"
   weight = 10
 
 [params]
-  # (Optional, default light) Sets color theme: light, dark or auto.
-  # Theme 'auto' switches between dark and light modes based on browser/os preferences
-  Sass = "book.scss"
-
-  # (Optional, default true) Controls table of contents visibility on right side of pages.
-  # Start and end levels can be controlled with markup.tableOfContents setting.
-  # You can also specify this parameter per page in front matter.
+  # Table of contents visibility
   BookToC = true
 
-  # (Optional, default none) Set the path to a logo for the book. If the logo is
-  # /static/logo.png then the path would be logo.png
+  # Logo path (static/logo1.png)
   BookLogo = 'logo1.png'
 
-  # (Optional, default none) Set leaf bundle to render as side menu
-  # When not specified file structure and weights will be used
-  # BookMenuBundle = '/menu'
-
-  # (Optional, default docs) Specify root page to render child pages as menu.
-  # Page is resoled by .GetPage function: https://gohugo.io/functions/getpage/
-  # For backward compatibility you can set '*' to render all sections to menu. Acts same as '/'
+  # Root section shown in sidebar
   BookSection = 'docs'
 
-  # Set source repository location.
-  # Used for 'Last Modified' and 'Edit this page' links.
+  # GitHub repo used for "Edit this page" and "Last modified"
   BookRepo = 'https://github.com/cpro-iiit/cpro-iiit.github.io'
 
-  # Configure the date format used on the pages
-  # - In git information
-  # - In blog posts
+  # Format for displaying dates
   BookDateFormat = 'January 2, 2006'
 
-  # (Optional, default true) Enables search function with flexsearch,
-  # Index is built on fly, therefore it might slowdown your website.
-  # Configuration for indexing can be adjusted in i18n folder per language.
+  # Enable search bar
   BookSearch = true
 
-  # (Optional, default true) Enables comments template on pages
-  # By default partals/docs/comments.html includes Disqus template
-  # See https://gohugo.io/content-management/comments/#configure-disqus
-  # Can be overwritten by same param in page frontmatter
+  # Enable comments (requires Disqus setup)
   BookComments = true
+
+# Move this into its own subsection as required by hugo-book
+[params.bookTheme]
+  Sass = "book.scss"
