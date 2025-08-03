@@ -45,7 +45,7 @@ Lorem markdownum insigne...
 {{< details >}}
 ## Markdown content
 Lorem markdownum insigne...
-{{< /expand >}}
+{{< /details >}}
 
 ## Hint
 
