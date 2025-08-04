@@ -14,8 +14,6 @@ You'll develop the confidence to write clean, readable, and maintainable code th
 
 ## Instructors
 [Girish Varma](https://girishvarma.in/)  
-[Abhishek Deshpande](https://fac-webpages.iiit.ac.in/Abhishek_Deshpande/)  
-[Vineet Gandhi](https://faculty.iiit.ac.in/~vgandhi/)
 
 ## Course Outline
 
