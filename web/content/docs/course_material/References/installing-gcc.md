@@ -18,7 +18,9 @@ We recommend the usage of Linux as this would be advantageous for your future co
 {{< tabs "uniqueid" >}}
 {{< tab "linux" >}}
 
-## Linux (Ubuntu 22.04)
+## Linux
+
+### Ubuntu 22.04
 
 For Linux-based systems, gcc usually comes installed by default.
 
@@ -36,6 +38,16 @@ Otherwise, if you see an error that reads "command not found" or something simil
 After running this, check if gcc is installed by running:
 
 `$ gcc --version`
+
+### Fedora
+
+For Fedora-based systems, first check if gcc is installed by running:
+`$ gcc -v`
+
+If it exists, you're good to go. Otherwise, it will prompt you to install it - simply enter `y` and press enter to install it, or run:
+
+`$ sudo dnf install gcc`
+
 {{< /tab >}}
 {{< tab "mac" >}} 
 
