@@ -11,7 +11,7 @@ footer: '![width:150px](IIIT_Hyderabad_Logo.jpg)'
 ## Sec A
 
 - Sudheera Y S (Head TA) | sudheera.yelimeli@research.iiit.ac.in | Fri 2-3 pm KCIS 3rd Floor (CVIT)
-- Kushal Balabhadruni | kushal.balabhadruni@students.iiit.ac.in | Wed 4-5 pm SBI WS
+- Kushal Balabhadruni | kushal.balabhadruni@students.iiit.ac.in | Wed 4-5 pm SBI WorkSpace
 - Yash Rahul Bhutada | yash.bhutada@students.iiit.ac.in | Mon 2-3 pm T-Hub 4th Floor (RRC)
 - Sujay Nilesh Belsare | sujay.belsare@students.iiit.ac.in | Sat 12-1 pm T-Hub 5th Floor (PreCog)
 - Vansh Agarwal | vansh.agarwal@students.iiit.ac.in | Wed 5-6 pm T-Hub 4th Floor (RRC)

@@ -8,4 +8,10 @@ footer: '![width:150px](IIIT_Hyderabad_Logo.jpg)'
 ---
 # Grading Scheme
 
-coming soon
+| Component        |Marks (%)  |                |
+|------------------|:---------:|---------------:|
+| Lab              |  10 x 1   |    |
+| Assignments      |   7 x 2   |  |
+| Quiz              | 8 x 2     |   |   
+| Mid Term         |   10 + 15  | Written + Lab  |
+| End Sem          |  15 + 20  | Written + Lab  |
