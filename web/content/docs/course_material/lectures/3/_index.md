@@ -135,6 +135,10 @@ if (marks >= 90 && marks <= 100) {
 - Programiz, web editor: https://tinyurl.com/bdd55vwn
 - http://courses.washington.edu/mengr477/resources/Precedence.pdf
 
+## Exercises
+
+For practice problems on this lecture, see: [L-03 Exercise Questions](exercises-l03.md)
+
 <!-- Order
 spellings
 less slides/ -->
