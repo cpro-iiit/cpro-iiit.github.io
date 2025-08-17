@@ -1,5 +1,5 @@
 ---
-title: "L-05: Advanced Loops, Nested Loops, Loop Control"
+title: "L-05: Nested Loops, Loop Control, Patterns"
 bookHidden: false
 marp: true
 header: 'CS0.101 Computer Programming (Monsoon 24)'
