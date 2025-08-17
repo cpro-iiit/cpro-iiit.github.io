@@ -203,8 +203,9 @@ a>b?  No
 a=a-b   b=b-a
 ```
 ---
-### Exercise: Factorial
+## Exercises
 
-Write a program, which given an input $n$, find factorial of n.
+Practice problems for this lecture: [L-04 Exercise Questions](exercises-l04.md)
+
 
 ---
