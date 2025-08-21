@@ -15,9 +15,6 @@ You'll develop the confidence to write clean, readable, and maintainable code th
 ## Instructors
 [Girish Varma](https://girishvarma.in/)
 
-[Vineet Gandhi](https://vineet-gandhi.github.io/)
-
-[Abhishek Deshpande](https://sites.google.com/view/abhishek-deshpande)
 
 ## Course Outline
 
