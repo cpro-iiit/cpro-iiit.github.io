@@ -1,6 +1,6 @@
 ---
 title: "L-06: Arrays, Strings"
-bookHidden: true
+bookHidden: false
 marp: true
 header: 'CS0.101 Computer Programming (Monsoon 24)'
 footer: '![width:125px](IIIT_Hyderabad_Logo.jpg)'
