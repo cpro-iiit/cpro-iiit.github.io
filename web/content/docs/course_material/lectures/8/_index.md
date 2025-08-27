@@ -1,6 +1,6 @@
 ---
-title: "L-08: Break, Continue, Type casting, Static, Global and Local Variables"
-bookHidden: true
+title: "L8: Float representation and Evaluation order for logical expressions"
+bookHidden: false
 marp: true
 header: 'CS0.101 Computer Programming (Monsoon 24)'
 footer: '![width:125px](IIIT_Hyderabad_Logo.jpg)'
