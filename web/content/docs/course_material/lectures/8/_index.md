@@ -16,6 +16,50 @@ revealjs_config:
 
 ---
 
+# C Programming: Tilde Operator (`~`)
+
+---
+
+## What is `~` in C?
+
+- `~` is the **bitwise NOT operator**.
+- Flips every bit:
+  - `0 → 1`
+  - `1 → 0`
+
+Example:
+
+x = 5; // 0000 0101 (in 8 bits)
+~x = ? // 1111 1010
+
+---
+
+
+## Example with Unsigned Integer
+
+```c
+#include <stdio.h>
+int main() {
+    unsigned int x = 5;    // 0000...0101
+    printf("x = %u\n", x);
+    printf("~x = %u\n", ~x);
+}
+```
+---
+
+## Example with Signed Integer
+```c
+#include <stdio.h>
+int main() {
+    int x = 5;   // 0000...0101
+    printf("x = %d\n", x);
+    printf("~x = %d\n", ~x);
+}
+```
+
+
+---
+
 ## Floating Point Representation (IEEE 754)
 
 C uses IEEE 754 Standard for float (32-bit) and double (64-bit).
@@ -83,6 +127,15 @@ Final representation:
 
 ---
 
+## The Problem: Exact Representation
+
+- Not all decimal real numbers can be represented **exactly** in binary.
+- Example: `0.1` in base 10 looks simple.
+- In **binary (base 2)**, `0.1` = `0.000110011001100110011...` (repeating infinitely).
+- A `float` has **limited bits**, so it stores only an approximation.
+
+---
+
 ## The Problem
 
 - Floating point numbers (`float`, `double`) are stored in **binary (IEEE 754)**.
@@ -91,21 +144,30 @@ Final representation:
 
 ---
 
-## Example: Equality Failure
+## Example: Equality Failure : Adding .1, 10 times
 
 ```c
 #include <stdio.h>
-
+#include <math.h>
 int main() {
     float x = 0.1f;
-    float y = 0.2f;
-    float z = 0.3f;
-
-    if (x + y == z) {
-        printf("Equal\n");
-    } else {
-        printf("Not Equal\n");
+    float sum = 0.0f;
+    // Add 0.1 ten times
+    for (int i = 0; i < 10; i++) 
+        sum += x;
+    printf("Sum of 0.1 added 10 times = %.25f\n", sum);
+    printf("Expected value            = 1.0000000000000000000000000\n");
+    // Direct equality check
+    if (sum == 1.0f) 
+        printf("Equal (sum == 1.0)\n");
+    else 
+        printf("Not Equal (sum != 1.0)\n");
+    // Safer way: use tolerance (epsilon)
+    float epsilon = 1e-6;
+    if (fabs(sum - 1.0f) < epsilon) {
+        printf("Approximately Equal (using epsilon)\n");
     }
+    return 0;
 }
 ```
 
@@ -116,13 +178,6 @@ int main() {
 Internally (IEEE 754, 32-bit float):
 
 0.1 → 0.10000000149011612
-0.2 → 0.20000000298023224
-0.3 → 0.30000001192092896
-
-
-x + y = 0.3000000119...
-
-z = 0.3000000119...
 
 Tiny differences cause == to fail.
 
@@ -147,6 +202,48 @@ int main() {
     }
 }
 ```
+---
+
+## Float Representation of Zero
+
+
+- Exponent = `00000000`
+- Mantissa = `000...000`
+- Two forms exist:
+  - **+0.0** → Sign bit = `0`
+  - **-0.0** → Sign bit = `1`
+
+---
+
+## Why Two Zeros?
+
+- Both `+0.0` and `-0.0` are valid.
+- They compare equal in C:
+```c
+#include <stdio.h>
+int main() {
+    float a = 0.0f;
+    float b = -0.0f;
+
+    if (a == b)
+        printf("Equal\n");
+    else
+        printf("Not Equal\n");
+
+    printf("1/a = %f\n", 1/a);
+    printf("1/b = %f\n", 1/b);
+}
+```
+---
+##  Output
+Equal
+1/a = inf
+1/b = -inf
+
+Equality holds (0.0 == -0.0).
+
+But division reveals the sign of zero!
+
 ---
 
 
