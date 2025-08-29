@@ -1,4 +1,4 @@
-# Quiz-1 Practice Problems - C Programming Course
+# Quiz-1 Practice Problems - C Pro
 
 ### Question 1: Scanf Buffer Issues
 Analyze this code and explain what happens when user enters "123 A":
