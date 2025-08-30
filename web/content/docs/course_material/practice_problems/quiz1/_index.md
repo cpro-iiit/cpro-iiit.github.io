@@ -1,3 +1,10 @@
+---
+title: "Quiz 1 Practice Problems"
+bookHidden: false
+header: 'CS0.101 Computer Programming (Monsoon 24)'
+footer: '![width:100px](IIIT_Hyderabad_Logo.jpg)'
+---
+
 # Quiz-1 Practice Problems
 
 ### Question 1: Scanf Buffer Issues
