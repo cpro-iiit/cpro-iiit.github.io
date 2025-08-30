@@ -617,4 +617,253 @@ int main() {
 }
 ```
 ---
+## ++,--,+= etc
+predict outputs
+
+Problem 3 (Mix of Pre/Post)
+
+```c
+#include <stdio.h>
+int main() {
+    int x = 3, y = 4, z;
+    z = x++ + ++y;
+    printf("%d %d %d\n", x, y, z);
+    return 0;
+}
+```
+
+Problem 4 (+= Compound Assignment)
+```c
+#include <stdio.h>
+int main() {
+    int a = 10;
+    a += 5;
+    printf("%d\n", a);
+    return 0;
+}
+```
+
+Problem 5 (/= Compound Assignment)
+```c
+#include <stdio.h>
+int main() {
+    int a = 20;
+    a /= 3;
+    printf("%d\n", a);
+    return 0;
+}
+```
+
+Problem 6 (Tricky Expression)
+```c
+#include <stdio.h>
+int main() {
+    int a = 5, b = 2;
+    int c = a++ * b-- + ++a;
+    printf("%d %d %d\n", a, b, c);
+    return 0;
+}
+```
+
+Problem 7 (Nested Compound Ops)
+```c
+#include <stdio.h>
+int main() {
+    int a = 10, b = 3;
+    a += b *= 2;
+    printf("%d %d\n", a, b);
+    return 0;
+}
+```
+---
+## Switch case
+
+predict outputs of following programs
+
+Problem 2 (Missing break)
+```c
+#include <stdio.h>
+int main() {
+    int x = 2;
+    switch (x) {
+        case 1: printf("One\n");
+        case 2: printf("Two\n");
+        case 3: printf("Three\n");
+    }
+    return 0;
+}
+```
+
+Problem 3 (default case)
+```c
+#include <stdio.h>
+int main() {
+    int x = 10;
+    switch (x) {
+        case 1: printf("One\n"); break;
+        case 2: printf("Two\n"); break;
+        default: printf("Default\n");
+    }
+    return 0;
+}
+```
+
+Problem 4 (Case Order)
+```c
+#include <stdio.h>
+int main() {
+    int x = 3;
+    switch (x) {
+        default: printf("Default\n");
+        case 1: printf("One\n"); break;
+        case 3: printf("Three\n"); break;
+    }
+    return 0;
+}
+```
+
+Problem 5 (Char in Switch)
+
+```c
+#include <stdio.h>
+int main() {
+    char c = 'b';
+    switch (c) {
+        case 'a': printf("A\n"); break;
+        case 'b': printf("B\n"); break;
+        case 'c': printf("C\n"); break;
+        default:  printf("Other\n");
+    }
+    return 0;
+}
+```
+
+Problem 6 (Fall-through with Multiple Cases)
+
+```c
+#include <stdio.h>
+int main() {
+    int x = 1;
+    switch (x) {
+        case 1:
+        case 2:
+        case 3: printf("Small\n"); break;
+        case 4: printf("Four\n"); break;
+        default: printf("Other\n");
+    }
+    return 0;
+}
+```
+
+Problem 7 (No Matching Case, No Default)
+```c
+#include <stdio.h>
+int main() {
+    int x = 100;
+    switch (x) {
+        case 1: printf("One\n"); break;
+        case 2: printf("Two\n"); break;
+    }
+    return 0;
+}
+```
+
+Problem 8 (Expression in Switch)
+```c
+#include <stdio.h>
+int main() {
+    int x = 2;
+    switch (x + 1) {
+        case 2: printf("Two\n"); break;
+        case 3: printf("Three\n"); break;
+        default: printf("Other\n");
+    }
+    return 0;
+}
+```
+---
+
+## Precedence, Associativity
+predict outputs of following programs
+```c
+#include <stdio.h>
+int main() {
+    int x = 2 + 3 * 4;
+    printf("%d\n", x);
+    return 0;
+}
+```
+
+Problem 2 (Division vs Multiplication)
+
+```c
+#include <stdio.h>
+int main() {
+    int x = 20 / 5 * 2;
+    printf("%d\n", x);
+    return 0;
+}
+```
+Problem 3 (Left-to-Right Associativity)
+```c
+#include <stdio.h>
+int main() {
+    int x = 100 / 10 / 2;
+    printf("%d\n", x);
+    return 0;
+}
+```
+Problem 4 (Unary Minus & Multiplication)
+
+```c
+#include <stdio.h>
+int main() {
+    int x = -2 * 3;
+    printf("%d\n", x);
+    return 0;
+}
+```
+Problem 5 (Postfix vs Prefix Increment)
+```c
+#include <stdio.h>
+int main() {
+    int x = 5;
+    int y = x++ + ++x;
+    printf("%d %d\n", x, y);
+    return 0;
+}
+```
+Problem 6 (Assignment Associativity)
+
+```c
+#include <stdio.h>
+int main() {
+    int a, b, c;
+    a = b = c = 5;
+    printf("%d %d %d\n", a, b, c);
+    return 0;
+}
+```
+Problem 7 (Mixing Relational & Logical)
+
+```c
+#include <stdio.h>
+int main() {
+    int x = 2, y = 3, z;
+    z = x < y && y < 5;
+    printf("%d\n", z);
+    return 0;
+}
+```
+Problem 8 (Comma Operator)
+
+```c
+#include <stdio.h>
+int main() {
+    int x;
+    x = (1, 2, 3 + 4);
+    printf("%d\n", x);
+    return 0;
+}
+```
 
