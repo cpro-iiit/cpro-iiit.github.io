@@ -1,3 +1,10 @@
+---
+title: "Quiz 1 Practice Problems"
+bookHidden: True
+header: 'CS0.101 Computer Programming (Monsoon 24)'
+footer: '![width:100px](IIIT_Hyderabad_Logo.jpg)'
+---
+
 
 ### Question 10: 2D Array Access Pattern
 What will this code print? Explain how 2D arrays are stored in memory:
