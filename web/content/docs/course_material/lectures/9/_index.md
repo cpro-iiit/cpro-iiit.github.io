@@ -61,7 +61,7 @@ int main() {
 ---
 
 ## Example 2: Sum of Elements in 2D Array
-<!-- ```c
+```c
 #include <stdio.h>
 int main() {
     int a[2][2] = {{10, 20}, {30, 40}};
@@ -74,11 +74,11 @@ int main() {
     printf("Sum = %d\n", sum);
     return 0;
 }
-``` -->
+```
 ---
 
 ## Example 3: Matrix Addition
-<!-- 
+
 ```c
 #include <stdio.h>
 int main() {
@@ -95,11 +95,11 @@ int main() {
     }
     return 0;
 }
-``` -->
+```
 ---
 
 ## Example 4: Matrix Multiplication (3x3)
-<!-- 
+
 ```c
 #include <stdio.h>
 int main() {
@@ -118,7 +118,7 @@ int main() {
     }
     return 0;
 }
-``` -->
+```
 ---
 
 ## Example 5: 3D Array
