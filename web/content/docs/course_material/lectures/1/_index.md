@@ -1,5 +1,5 @@
 ---
-title: "L-01: Introduction"
+title: "L01: Introduction"
 bookHidden: false
 marp: true
 header: 'CS0.101 Computer Programming (Monsoon 24)'

@@ -1,5 +1,5 @@
 ---
-title: "L-02: CBasics"
+title: "L02: CBasics"
 bookHidden: false
 ---
 

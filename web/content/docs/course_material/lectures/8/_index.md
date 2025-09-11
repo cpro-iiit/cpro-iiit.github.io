@@ -1,5 +1,5 @@
 ---
-title: "L8: Float representation and Evaluation order for logical expressions"
+title: "L08: Float representation and Evaluation order for logical expressions"
 bookHidden: false
 marp: true
 header: 'CS0.101 Computer Programming (Monsoon 24)'

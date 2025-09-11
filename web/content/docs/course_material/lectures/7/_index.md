@@ -1,5 +1,5 @@
 ---
-title: "L-07: Data Representations"
+title: "L07: Data Representations"
 bookHidden: false
 marp: true
 header: 'CS0.101 Computer Programming (Monsoon 25)'

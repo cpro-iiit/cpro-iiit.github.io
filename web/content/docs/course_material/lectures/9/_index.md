@@ -1,5 +1,5 @@
 ---
-title: "L9: Multidimensional Arrays, String Library and Functions"
+title: "L09: Multidimensional Arrays, String Library and Functions"
 bookHidden: false
 marp: true
 header: 'CS0.101 Computer Programming (Monsoon 24)'

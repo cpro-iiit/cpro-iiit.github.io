@@ -1,5 +1,5 @@
 ---
-title: "L-06: Arrays, Strings"
+title: "L06: Arrays, Strings"
 bookHidden: false
 marp: true
 header: 'CS0.101 Computer Programming (Monsoon 25)'

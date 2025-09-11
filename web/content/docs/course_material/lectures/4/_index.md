@@ -1,5 +1,5 @@
 ---
-title: "L-04: Operators, Precedence, Conditionals, Loops"
+title: "L04: Operators, Precedence, Conditionals, Loops"
 bookHidden: false
 marp: true
 header: 'CS0.101 Computer Programming (Monsoon 24)'

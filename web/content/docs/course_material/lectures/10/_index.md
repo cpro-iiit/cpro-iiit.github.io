@@ -1,6 +1,6 @@
 ---
-title: "L-10: Arrays, 1D 2D problems"
-bookHidden: true
+title: "L10: Recursion and Sorting"
+bookHidden: false
 marp: true
 header: 'CS0.101 Computer Programming (Monsoon 24)'
 footer: '![width:125px](IIIT_Hyderabad_Logo.jpg)'
@@ -8,168 +8,203 @@ revealjs_config:
   slideNumber: true
 ---
 
-## L-10 Arrays, 1D 2D problems
 
+## L10: Recursion and Sorting
 
-<div style="max-width: 640px"><div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"><iframe src="https://iiitaphyd-my.sharepoint.com/personal/rc-support_iiit_ac_in/_layouts/15/embed.aspx?UniqueId=1defc217-dc5d-42d5-b9a5-3207ce689a6b&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Computer Programming _ SH-2 (09.35AM-10.30AM)-20240828_050100-Meeting Recording.mp4" style="border:none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; max-width: 100%;"></iframe></div></div>
-
-
---- 
-![alt text](image.png) 
 
 ---
-Insertion Sort
-```c
-#include<stdio.h>
-int main(){
-  int arr[] = { 9, 6, 7, 2, 5, 8};
-  int size = sizeof(arr) / sizeof(arr[0]);
-  int i,j;
-for (i = 1; i < size; i++) { // Start from 1 as arr[0] is always sorted
-    int currentElement = arr[i];
-     j = i - 1;
-    // Move elements of arr[0..i-1], that are greater than key, 
-    // to one position ahead of their current position
-    while (j >= 0 && arr[j] > currentElement) {
-      arr[j + 1] = arr[j];
-      j = j - 1;}
-     // Finally place the Current element at its correct position.
-    arr[j + 1] = currentElement;
-  }
-  printf("Sorted Array: ");
-  for (i = 0; i < size; i++){
-    printf("%d ", arr[i]);}
-  printf("\n");
-  return 0;
-      }
-```
---- 
-Bubble Sort
-```c
-#include<stdio.h>
-int main()
-{
-  int arr[] = {3,2,6,5,4,7,8,9,10,1};
-  int size = sizeof(arr)/sizeof(arr[0]);
-  // loop over array elements
-  for (int i = 0; i < size - 1; ++i) {
-    // swapped variable initially set to 0  
-    int swapped = 0;
-    // loop to compare array elements
-    for (int j = 0; j < size - i - 1; ++j) {
-      // compare adjacent elements
-      if (arr[j] > arr[j + 1]) {
-        // swap if out-of-order
-        int temp = arr[j];
-        arr[j] = arr[j + 1];
-        arr[j + 1] = temp;
-        swapped = 1;
-      }
-    }
-    if(swapped == 0) { break;}
-  }
-  printf("Sorted Array: ");
-  for(int i = 0; i < size; i++)  {
-        printf(" %d", arr[i]);
-    }
-  printf("\n");
-  return 0;
-        }
-```
---- 
-Selection Sort
 
+
+# Euclid’s Algorithm & Recursion  
+
+### Greatest Common Divisor (GCD) in C  
+
+---
+
+## What is GCD?
+- **GCD (Greatest Common Divisor)** of two integers `a` and `b`  
+  = the largest integer that divides both without remainder.  
+
+Examples:  
+- gcd(12, 8) = 4  
+- gcd(20, 28) = 4  
+- gcd(17, 5) = 1 (they are coprime)  
+
+---
+
+## Euclid’s Algorithm (Concept)
+- Based on this property:  
+  - `gcd(a, b) = gcd(b, a % b)`  
+  - Continue until remainder = 0  
+- When `b = 0`, `gcd(a, b) = a`  
+
+---
+
+## Euclid’s Algorithm (Steps)
+Find gcd(48, 18):  
+1. gcd(48, 18) = gcd(18, 48 % 18) = gcd(18, 12)  
+2. gcd(18, 12) = gcd(12, 6)  
+3. gcd(12, 6) = gcd(6, 0)  
+4. gcd = 6 ✅  
+
+---
+
+## Iterative GCD in C
 ```c
 #include <stdio.h>
-int main()
-{ int n = 10;
-  int a[] = {3,2,6,5,4,7,8,9,10,1};
-  int min_index;
-  for(int i = 0; i < n - 1; i++) {
-    min_index = i;
-    for(int j = i + 1; j < n; j++) 
-    { if(a[min_index] > a[j]) {
-          min_index = j;
-        }
+
+int gcd(int a, int b) {
+    while (b != 0) {
+        int temp = b;
+        b = a % b;
+        a = temp;
     }
-    if(min_index != i)
-    { int temp = a[i];
-      a[i] = a[min_index];
-      a[min_index] = temp;
-    }
-  }
-  printf("Sorted Array: ");
-  for(int i = 0; i < n; i++)  {
-    printf(" %d", a[i]);}
-  printf("\n");
-  return 0;
-            }
+    return a;
+}
 ```
 ---
-Leader in array
+## Recursive GCD in C
 ```c
-#include<stdio.h>
-int main()
-{
-    int arr[] = {21, 16, 17, 4, 6, 3, 5, 2};
-    int n = sizeof(arr)/sizeof(arr[0]); // get the array length
-    int max_from_right =  arr[n-1];
-    printf("%d ", max_from_right);
-    for (int i = n-2; i >= 0; i--)
-    {
-        if (max_from_right < arr[i])
-        {          
-            max_from_right = arr[i];    // 
-            printf("%d ",max_from_right);
-        }
-    }
-    printf("\n");
+int gcd(int a, int b) {
+    if (b == 0)
+        return a;
+    return gcd(b, a % b);
+}
+
+int main() {
+    int x = 48, y = 18;
+    printf("GCD of %d and %d is %d\n", x, y, gcd(x, y));
     return 0;
-    } 
+}
 ```
---- 
-Insertion Sort: https://courses.iiit.ac.in/mod/resource/view.php?id=55407
-Bubble Sort:    https://courses.iiit.ac.in/mod/resource/view.php?id=55408
-Selection Sort: https://courses.iiit.ac.in/mod/resource/view.php?id=55409
-Leader in Array: https://courses.iiit.ac.in/mod/resource/view.php?id=55410
+---
 
-Reading Material:
+## Dry Run (Recursive Example)
 
-- https://www.youtube.com/watch?v=kPRA0W1kECg
+gcd(48, 18):
 
-- Knuth, Donald Ervin, 1938 - The art of computer programming / Donald Ervin Knuth. xiv,782 p. 24 cm.
-- The Advantages & Disadvantages of Sorting Algorithms - Joe Andy - https://sciencing.com/the-advantages-disadvantages-of-sorting-algorithms-12749529.html
+gcd(48, 18) → gcd(18, 12)
+
+gcd(18, 12) → gcd(12, 6)
+
+gcd(12, 6) → gcd(6, 0)
+
+Return 6 ✅
 
 ---
-### Practice problems 1
-- Write a C program to read and print elements of array.
-- Write a C program to find sum of all array elements.
-- Write a C program to find maximum and minimum element in an array.
-- Write a C program to print all negative elements in an array.
-- Write a C program to count total number of even and odd elements in an array.
-- Write a C program to count total number of negative elements in an array.
+
+## Ternary Operator
 
 
+---
 
---- 
-### Practice problems 2
+## Recursive GCD in C
+```c
+int gcd(int a, int b) {
+    if (b == 0)
+        return a;
+    return gcd(b, a % b);
+}
 
-- Write a C program to copy all elements from an array to another array
-- Write a C program to insert an element in an array.
-- Write a C program to find reverse of an array.
-- Write a C program to merge two array to third array.
-- Write a C program to count total number of duplicate elements in an array.
-- Write a C program to print all unique elements in the array.
-- Write a C program to count frequency of each element in an array.
-- Write a C program to put even and odd elements of array in two separate array.
+int gcd_single_line(int a, int b) {
+  return b==0 ? a: gcd_single_line(b, a % b) ;
+}
+```
 
---- 
+---
 
-### Practice Problem 3 
-    1000 simple problems topic wise
-- https://www.sanfoundry.com/c-programming-examples/
+## Factorial using Ternary operator?
 
---- 
-### L-10, Slides
+```c
+int factorial_single_line(int n) {
+  return n==0 ? 1: n * factorial_single_line(n-1); 
+}
+```
 
-- https://github.com/cpro-iiit/cpro-iiit.github.io/blob/main/web/content/docs/course_material/lectures/10/10.pdf
+---
+
+# Sorting
+
+arranging elements of an array in ascending or descending order. 
+---
+
+
+## Sorting Algorithms
+- Common sorting algorithms:
+  - Bubble Sort
+  - Selection Sort
+  - Insertion Sort
+  - Merge Sort, Quick Sort (advanced)  
+
+---
+
+
+## Selection Sort
+- Find the **minimum element** in the unsorted part of the array  
+- Swap it with the **first unsorted element**  
+- Move boundary forward  
+- Repeat until sorted  
+
+---
+
+
+## Recursive Idea
+- Base case: if starting index = last index → done  
+- Recursive case:
+  1. Find minimum element from `start` to `end`  
+  2. Swap with element at `start`  
+  3. Recur for subarray `start+1 ... end`  
+
+---
+
+## Recursive Selection Sort in C
+```c
+#include <stdio.h>
+
+// Find index of minimum element between indices 
+int minIndex(int arr[], int index, int n) {
+    int min_index = index;
+    for (int k = index + 1; k < n; k++) {
+      if (arr[k] < arr[min_index]) min_index = k;
+    }
+    return min_index;
+}
+
+// Recursive Selection Sort
+void Sort(int arr[], int n, int index) {
+    if (index == n) return;  // base case
+    // Find minimum element index in subarray
+    int k = minIndex(arr, index, n);
+    // Swap
+    if (k != index) {
+        int temp = arr[k];
+        arr[k] = arr[index];
+        arr[index] = temp;
+    }
+    // Recur for the rest
+    Sort(arr, n, index+1);
+}
+
+int main() {
+  int a[] = { 6,7,5,4,3,2,1};
+  Sort(a, 7, 0);
+  return 0;
+}
+```
+
+---
+
+
+## Example Walkthrough
+
+Array = [64, 25, 12, 22, 11]
+
+Find min (11), swap with 64 → [11, 25, 12, 22, 64]
+
+Recur on [25,12,22,64] → min=12 → [11,12,25,22,64]
+
+Next → [11,12,22,25,64]
+
+Sorted ✅
+
+---
