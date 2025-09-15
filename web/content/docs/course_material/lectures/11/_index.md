@@ -9,7 +9,7 @@ revealjs_config:
 ---
 
 
-# Insertion Sort in C
+# Insertion Sort 
 
 ---
 
@@ -30,7 +30,7 @@ revealjs_config:
 
 ---
 
-## C Implementation
+## Implementation
 ```c
 void insertionSort(int arr[], int n) {
     for (int i = 1; i < n; i++) {
@@ -81,7 +81,7 @@ For a reverse sorted array, both will do n(n+1)/2 iterations.
 
 ---
 
-## Recursive Implementation (C)
+## Recursive Implementation 
 
 ```c
 int binarySearchRec(int arr[], int low, int high, int key) {
@@ -97,7 +97,9 @@ int binarySearchRec(int arr[], int low, int high, int key) {
         return binarySearchRec(arr, mid + 1, high, key);
 }
 ```
+
 [Pythontutor](https://pythontutor.com/render.html#code=%23include%20%3Cstdio.h%3E%0A%0A//%20Recursive%20binary%20search%20function%0Aint%20binarySearch%28int%20arr%5B%5D,%20int%20low,%20int%20high,%20int%20key%29%20%7B%0A%20%20%20%20if%20%28low%20%3E%20high%29%0A%20%20%20%20%20%20%20%20return%20-1%3B%20%20//%20key%20not%20found%0A%0A%20%20%20%20int%20mid%20%3D%20%28low%20%2B%20high%29%20/%202%3B%0A%0A%20%20%20%20if%20%28arr%5Bmid%5D%20%3D%3D%20key%29%0A%20%20%20%20%20%20%20%20return%20mid%3B%20%20//%20key%20found%0A%20%20%20%20else%20if%20%28arr%5Bmid%5D%20%3C%20key%29%0A%20%20%20%20%20%20%20%20return%20binarySearch%28arr,%20mid%20%2B%201,%20high,%20key%29%3B%20//%20search%20right%0A%20%20%20%20else%0A%20%20%20%20%20%20%20%20return%20binarySearch%28arr,%20low,%20mid%20-%201,%20key%29%3B%20//%20search%20left%0A%7D%0A%0Aint%20main%28%29%20%7B%0A%20%20%20%20//%20Test%20Case%201%0A%20%20%20%20int%20arr1%5B%5D%20%3D%20%7B2,%204,%206,%208,%2010,%2012,%2014%7D%3B%0A%0A%20%20%20%20int%20result1%20%3D%20binarySearch%28arr1,%200,%206,%2010%29%3B%0A%20%20%20%20if%20%28result1%20!%3D%20-1%29%0A%20%20%20%20%20%20%20%20printf%28%22Test%20Case%201%3A%20Element%20%25d%20found%20at%20index%20%25d%5Cn%22,%2010,%20result1%29%3B%0A%20%20%20%20else%0A%20%20%20%20%20%20%20%20printf%28%22Test%20Case%201%3A%20Element%20%25d%20not%20found%5Cn%22,%2010%29%3B%0A%0A%20%20%20%20//%20Test%20Case%202%0A%20%20%20%20int%20arr2%5B%5D%20%3D%20%7B5,%2015,%2025,%2035,%2045,%2055%7D%3B%0A%20%20%20%20int%20result2%20%3D%20binarySearch%28arr2,%200,%205,%2020%29%3B%0A%20%20%20%20if%20%28result2%20!%3D%20-1%29%0A%20%20%20%20%20%20%20%20printf%28%22Test%20Case%202%3A%20Element%20%25d%20found%20at%20index%20%25d%5Cn%22,%2020,%20result2%29%3B%0A%20%20%20%20else%0A%20%20%20%20%20%20%20%20printf%28%22Test%20Case%202%3A%20Element%20%25d%20not%20found%5Cn%22,%2020%29%3B%0A%0A%20%20%20%20return%200%3B%0A%7D&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=c_gcc9.3.0&rawInputLstJSON=%5B%5D&textReferences=false)
+
 ---
 
 ## Runtime of Binary Search
@@ -149,7 +151,7 @@ Example sequence:
 
 ---
 
-## Recursive Definition in C
+## Recursive Definition 
 ```c
 int fibonacci(int n) {
     if (n == 0) return 0;  // base case

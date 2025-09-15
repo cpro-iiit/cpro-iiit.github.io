@@ -1,5 +1,5 @@
 ---
-title: "L-12: 2D Array"
+title: "L-12: Recursion and Merge Sort"
 bookHidden: true
 marp: true
 header: 'CS0.101 Computer Programming (Monsoon 24)'
