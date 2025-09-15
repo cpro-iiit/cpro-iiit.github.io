@@ -1,5 +1,5 @@
 ---
-title: "L11: More Soring and Recursion"
+title: "L11: More Sorting, Searching and Recursion"
 bookHidden: false
 marp: true
 header: 'CS0.101 Computer Programming (Monsoon 24)'
