@@ -161,3 +161,54 @@ mergeSort([12,11,13,5,6,7])
  → mergeSort([5,6,7]) → [5,6,7]
  → merge([11,12,13], [5,6,7]) → [5,6,7,11,12,13]
  ```
+ 
+ ---
+
+
+## 🔹 Example: Array of 8 Elements
+Level 0: Merge 8 elements → 8 units of work  
+Level 1: 2 merges of 4 elements → 2 × 4 = 8 units  
+Level 2: 4 merges of 2 elements → 4 × 2 = 8 units  
+Level 3: 8 merges of 1 element → trivial (no real work)
+
+---
+
+## 🔹 Pattern Observed
+- At each level of recursion tree: **total work = n**
+- Number of levels = log₂(n) (because array keeps halving)
+
+Example with n = 8:
+- Work per level = 8  
+- Number of levels = 3 (halving until single elements)
+
+Total work = 8 + 8 + 8 = 24
+
+---
+
+## 🔹 Generalizing
+For an array of size n:
+- Each level does **n units** of merging work  
+- Number of levels ≈ log₂(n)
+
+So total work ≈ n × log₂(n)
+
+---
+
+## 🔹 Why This Matters
+
+- Merge Sort does the **same work** regardless of input order  
+- It’s predictable:  
+  - n = 8 → about 24 comparisons  
+  - n = 16 → about 64 comparisons  
+- Much better than insertion/selection sort (which can need n² comparisons)
+
+---
+
+## ✅ Summary
+- We counted actual merging steps  
+- Each level = n units of work  
+- Levels = log₂(n)  
+- Total work ≈ n × log₂(n)  
+- Merge Sort is efficient and consistent
+
+---
