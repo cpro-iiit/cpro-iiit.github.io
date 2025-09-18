@@ -89,6 +89,7 @@ void hanoi(int n, char from, char to, char aux) {
 ## Merge Function
 ```c
 // merges the subarrays from indices l to m and m+1 to r
+// assumes that the subarrays are sorted
 void merge(int arr[], int l, int m, int r) {
     int n1 = m - l + 1; // length of first subarray 
     int n2 = r - m; // length of second subarray
