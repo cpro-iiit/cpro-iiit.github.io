@@ -98,21 +98,7 @@ int main() {
 **What values will x and y have at the end? Explain the short-circuit evaluation behavior.**
 
 
-### Question 7: 
-```c
-#include <stdio.h>
-int main() {
-    int arr[2][3] = {{1,2,3}, {4,5,6}};
-    int *ptr = (int*)arr;
-    for(int i = 0; i < 6; i++) {
-        printf("%d ", *(ptr + i));
-    }
-    return 0;
-}
-```
-**What will be printed? Explain how 2D arrays are stored in memory (row-major order).**
-
-### Question 8:  
+### Question 7:  
 ```c
 #include <stdio.h>
 #include <string.h>
@@ -127,7 +113,7 @@ int main() {
 **What error will occur when this code runs? How would you fix it using strncpy?**
 
 
-### Question 9: 
+### Question 8: 
 ```c
 #include <stdio.h>
 int gcd(int a, int b) {
@@ -143,7 +129,7 @@ int main() {
 ```
 **Trace through the recursive calls. What will be printed step by step?**
 
-### Question 10: 
+### Question 9: 
 ```c
 #include <stdio.h>
 void selectionSort(int arr[], int n) {
@@ -164,7 +150,7 @@ void selectionSort(int arr[], int n) {
 **Fill in the blanks to complete the selection sort implementation.**
 
 
-### Question 11: 
+### Question 10: 
 ```c
 #include <stdio.h>
 int binarySearch(int arr[], int low, int high, int key) {
@@ -185,7 +171,7 @@ int main() {
 ```
 **What will be the output when searching for 6? Trace through the recursive calls.**
 
-### Question 12:    
+### Question 11:    
 ```c
 #include <stdio.h>
 int count = 0;
@@ -204,7 +190,7 @@ int main() {
 **What will be the output? Why is this implementation inefficient for large values of n?**
 
 
-### Question 13: 
+### Question 12: 
 ```c
 #include <stdio.h>
 int moves = 0;
@@ -228,7 +214,7 @@ int main() {
 **How many total moves will be printed for 3 disks? Can you derive the formula for n disks?**
 
 
-### Question 14: 
+### Question 13: 
 ```c
 #include <stdio.h>
 void merge(int arr[], int l, int m, int r) {
@@ -257,7 +243,7 @@ void merge(int arr[], int l, int m, int r) {
 **Fill in the missing code. What happens if these lines are omitted?**
 
 
-### Question 15: 
+### Question 14: 
 ```c
 #include <stdio.h>
 int factorial(int n) {
@@ -273,7 +259,7 @@ int main() {
 ```
 **What is wrong with this code? What will happen when it runs and why?**
 
-### Question 16: 
+### Question 15: 
 ```c
 #include <stdio.h>
 void generateBinary(int n, char str[], int pos) {
@@ -297,7 +283,7 @@ int main() {
 ```
 **What will be the complete output? How many binary strings will be printed and in what order?**
 
-### Question 17: 
+### Question 16: 
 ```c
 #include <stdio.h>
 int power(int base, int exp) {
@@ -319,7 +305,7 @@ int main() {
 ```
 **Fill in the blanks to complete this optimized recursive power function.**
 
-### Question 18: 
+### Question 17: 
 ```c
 #include <stdio.h>
 int arraySum(int arr[], int n) {
@@ -335,7 +321,7 @@ int main() {
 ```
 **What is the error in this recursive sum function? What would be the incorrect result?**
 
-### Question 19: Binary Strings with Exactly k Ones
+### Question 18: Binary Strings with Exactly k Ones
 **Problem Statement:** Write a recursive program that prints all binary strings of length n with exactly k ones.
 
 **Example 1:**
@@ -357,7 +343,7 @@ int main() {
   1000
   ```
 
-### Question 20: All Permutations of Numbers 1 to n
+### Question 19: All Permutations of Numbers 1 to n
 **Problem Statement:** Write a recursive program that prints all permutations of numbers from 1 to n.
 
 **Example 1:**
@@ -380,7 +366,7 @@ int main() {
   2 1
   ```
 
-### Question 21: Balanced Parentheses Strings
+### Question 20: Balanced Parentheses Strings
 **Problem Statement:** Write a recursive program that prints all balanced parentheses strings of length 2n.
 
 **Example 1:**
@@ -402,7 +388,7 @@ int main() {
   ()()()
   ```
 
-### Question 22: All Subsets of n Distinct Elements
+### Question 21: All Subsets of n Distinct Elements
 **Problem Statement:** Take a sequence of n distinct elements as input, and print all subsets of the n element set formed by them.
 
 **Example 1:**
@@ -429,7 +415,7 @@ int main() {
   {5, 10}
   ```
 
-### Question 23: All k-Element Subsets
+### Question 22: All k-Element Subsets
 **Problem Statement:** Take a sequence of n distinct elements and a number k as input, and print all k element subsets of the n element set formed by them.
 
 **Example 1:**
@@ -453,7 +439,7 @@ int main() {
   {15}
   ```
 
-### Question 24: Count Subsets with Sum k
+### Question 23: Count Subsets with Sum k
 **Problem Statement:** Given an array, count the number of subsets whose elements add up to k (return the count, don't print the subsets).
 
 **Example 1:**
