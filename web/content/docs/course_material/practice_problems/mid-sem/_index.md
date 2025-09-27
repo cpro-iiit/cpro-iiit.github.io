@@ -1,5 +1,5 @@
 ---
-title: "Mid-Sem Practice Problems"
+title: "Mid-Sem Theory Practice Problems"
 bookHidden: false
 header: 'CS0.101 Computer Programming (Monsoon 24)'
 footer: '![width:100px](IIIT_Hyderabad_Logo.jpg)'
