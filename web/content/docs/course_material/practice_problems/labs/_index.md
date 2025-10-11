@@ -58,3 +58,19 @@ https://leetcode.com/problems/generate-parentheses/description/
 https://leetcode.com/problems/n-queens/description/
 
 https://www.tutorialspoint.com/data_structures_algorithms/tower_of_hanoi.htm
+
+## Merge Sort and qsort
+
+https://leetcode.com/problems/sort-the-people/description/
+
+https://leetcode.com/problems/sort-an-array/description/
+
+https://cses.fi/problemset/task/1619
+
+https://www.hackerrank.com/challenges/ctci-merge-sort/problem
+
+## Greedy + Sorting
+
+https://cses.fi/problemset/task/1090
+
+https://cses.fi/problemset/task/1084
