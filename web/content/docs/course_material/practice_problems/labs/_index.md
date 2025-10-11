@@ -71,6 +71,10 @@ https://www.hackerrank.com/challenges/ctci-merge-sort/problem
 
 ## Greedy + Sorting
 
+https://codeforces.com/gym/102951/problem/B 
+
+http://cses.fi/problemset/task/1074
+
 https://cses.fi/problemset/task/1090
 
 https://cses.fi/problemset/task/1084
