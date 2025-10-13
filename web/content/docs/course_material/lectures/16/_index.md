@@ -128,7 +128,7 @@ int *arr = malloc(n * sizeof(int));
 
 ## 🔹 Common Use Case 2: Social Networks
 
-Allocate memory for a matrix when dimensions are unknown.
+Different people can have different number of friends. So we need something like a 2d array with different rows having different sizes.
 
 ```c
 
@@ -197,7 +197,7 @@ int main() {
 
 ## 🔹 Common Use Case 3: Linked Lists
 
-Each node is created dynamically to store data.
+Each node is created dynamically to store data. Data can be stored in different memory locations without needing to be contigous. 
 
 ```c
 #include <stdio.h>
