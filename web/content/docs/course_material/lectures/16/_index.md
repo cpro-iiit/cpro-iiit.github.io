@@ -10,7 +10,7 @@ revealjs_config:
 
 
 
-# Dynamic Memory Allocation in C
+# Dynamic Memory Allocation   
 
 ---
 
@@ -124,94 +124,119 @@ When user input size is unknown at compile time.
 int *arr = malloc(n * sizeof(int));
 ```
 
-💡 Used in:
-- Dynamic storage of sensor data
-- Histogram or frequency table construction
-- Resizable buffers
-
 ---
 
-## 🔹 Common Use Case 2: Linked Lists
-
-Each node is created dynamically to store data.
-
-```c
-typedef struct Node {
-    int data;
-    struct Node *next;
-} Node;
-
-Node *newNode(int val) {
-    Node *temp = malloc(sizeof(Node));
-    temp->data = val;
-    temp->next = NULL;
-    return temp;
-}
-```
-
-
----
-
-## 🔹 Common Use Case 3: Dynamic 2D Arrays
+## 🔹 Common Use Case 2: Social Networks
 
 Allocate memory for a matrix when dimensions are unknown.
 
 ```c
-int **matrix = malloc(rows * sizeof(int *));
-for (int i = 0; i < rows; i++)
-    matrix[i] = malloc(cols * sizeof(int));
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct Person {
+    char name[10];
+    // friends is an array of person pointers
+    struct Person** friends; 
+    int num_friends;
+} Person;
+
+int main() {
+
+  Person* a = malloc(sizeof(Person));
+  strcpy(a->name, "Alice");
+  
+  Person* b = malloc(sizeof(Person));
+  strcpy(b->name, "Bob");
+  
+  Person* c = malloc(sizeof(Person));
+  strcpy(c->name, "Charlie");
+  
+  Person* d = malloc(sizeof(Person));
+  strcpy(c->name, "Diestel");
+  
+  a->friends = malloc(2*sizeof(Person*));
+  a->friends[0] = b;
+  a->friends[1] = c;
+  a->num_friends = 2;
+  
+  
+  b->friends = malloc(2*sizeof(Person*));
+  b->friends[0] = c;
+  b->friends[1] = a;
+  b->num_friends = 2;
+  
+  c->friends = malloc(1*sizeof(Person*));
+  c->friends[0] = d;
+  c->num_friends = 1;
+  
+  d->friends = NULL;
+  d->num_friends = 0;
+
+  return 0;
+}
+
+
 ```
+[Pythontutor](https://pythontutor.com/render.html#code=%0A%23include%20%3Cstdio.h%3E%0A%23include%20%3Cstdlib.h%3E%0A%23include%20%3Cstring.h%3E%0A%0Atypedef%20struct%20Person%20%7B%0A%20%20%20%20char%20name%5B10%5D%3B%0A%20%20%20%20//%20friends%20is%20an%20array%20of%20person%20pointers%0A%20%20%20%20struct%20Person**%20friends%3B%20%0A%20%20%20%20int%20num_friends%3B%0A%7D%20Person%3B%0A%0Aint%20main%28%29%20%7B%0A%0A%20%20Person*%20a%20%3D%20malloc%28sizeof%28Person%29%29%3B%0A%20%20strcpy%28a-%3Ename,%20%22Alice%22%29%3B%0A%20%20%0A%20%20Person*%20b%20%3D%20malloc%28sizeof%28Person%29%29%3B%0A%20%20strcpy%28b-%3Ename,%20%22Bob%22%29%3B%0A%20%20%0A%20%20Person*%20c%20%3D%20malloc%28sizeof%28Person%29%29%3B%0A%20%20strcpy%28c-%3Ename,%20%22Charlie%22%29%3B%0A%20%20%0A%20%20Person*%20d%20%3D%20malloc%28sizeof%28Person%29%29%3B%0A%20%20strcpy%28c-%3Ename,%20%22Diestel%22%29%3B%0A%20%20%0A%20%20a-%3Efriends%20%3D%20malloc%282*sizeof%28Person*%29%29%3B%0A%20%20a-%3Efriends%5B0%5D%20%3D%20b%3B%0A%20%20a-%3Efriends%5B1%5D%20%3D%20c%3B%0A%20%20a-%3Enum_friends%20%3D%202%3B%0A%20%20%0A%20%20%0A%20%20b-%3Efriends%20%3D%20malloc%282*sizeof%28Person*%29%29%3B%0A%20%20b-%3Efriends%5B0%5D%20%3D%20c%3B%0A%20%20b-%3Efriends%5B1%5D%20%3D%20a%3B%0A%20%20b-%3Enum_friends%20%3D%202%3B%0A%20%20%0A%20%20c-%3Efriends%20%3D%20malloc%281*sizeof%28Person*%29%29%3B%0A%20%20c-%3Efriends%5B0%5D%20%3D%20d%3B%0A%20%20c-%3Enum_friends%20%3D%201%3B%0A%20%20%0A%20%20d-%3Efriends%20%3D%20NULL%3B%0A%20%20d-%3Enum_friends%20%3D%200%3B%0A%0A%20%20return%200%3B%0A%7D&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=c_gcc9.3.0&rawInputLstJSON=%5B%5D&textReferences=false)
 
 💡 Used in:
 - Dynamic table storage
 - Graph adjacency matrices
 - Image data buffers
 
+
+
 ---
 
-## 🔹 Common Use Case 4: Binary Trees
+## 🔹 Common Use Case 3: Linked Lists
 
-Dynamic allocation enables recursive structures.
+Each node is created dynamically to store data.
 
 ```c
+#include <stdio.h>
+#include <stdlib.h>
+
 typedef struct Node {
     int data;
-    struct Node *left, *right;
+    struct Node* next;
 } Node;
 
-Node* newNode(int val) {
-    Node *temp = malloc(sizeof(Node));
-    temp->data = val;
-    temp->left = temp->right = NULL;
-    return temp;
-}
-```
+int main() {
 
-💡 Used in:
-- Binary Search Trees
-- Expression Trees
-- Heaps
-
----
-
-## 🔹 Common Use Case 5: Graphs (Adjacency List)
-
-```c
-typedef struct Node {
-    int vertex;
-    struct Node *next;
-} Node;
-
-Node* createNode(int v) {
-    Node *n = malloc(sizeof(Node));
-    n->vertex = v;
-    n->next = NULL;
-    return n;
+    // Linkedlist in Stack
+    // Node a, b, c;
+    // a.data = 1;
+    // a.next = &b;
+    // b.data = 2;
+    // b.next = &c;
+    // c.data = 3;
+    // c.next = NULL;
+    
+    // LinkedList in Heap
+    
+    Node* a = malloc(sizeof(Node));
+    Node* b = malloc(sizeof(Node));
+    Node* c = malloc(sizeof(Node));
+    a->data = 1;
+    a->next = b;
+    b->data = 2;
+    b->next = c;
+    c->data = 3;
+    c->next = NULL;
+    
+    
+    return 0;
 }
 ```
 
 
 ---
+
+
 
 ## ⚠️ Memory Management Best Practices
 
