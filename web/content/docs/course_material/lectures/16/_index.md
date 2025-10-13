@@ -158,21 +158,24 @@ int main() {
   Person* d = malloc(sizeof(Person));
   strcpy(c->name, "Diestel");
   
+  // a has 2 friends: b, c
   a->friends = malloc(2*sizeof(Person*));
   a->friends[0] = b;
   a->friends[1] = c;
   a->num_friends = 2;
   
-  
+  // b has 2 friends: c, a
   b->friends = malloc(2*sizeof(Person*));
   b->friends[0] = c;
   b->friends[1] = a;
   b->num_friends = 2;
   
+  // c has 1 friend: d
   c->friends = malloc(1*sizeof(Person*));
   c->friends[0] = d;
   c->num_friends = 1;
   
+  // d has no friends
   d->friends = NULL;
   d->num_friends = 0;
 
@@ -233,6 +236,7 @@ int main() {
 }
 ```
 
+[pythontutor](https://pythontutor.com/render.html#code=%23include%20%3Cstdio.h%3E%0A%0A%0A%23include%20%3Cstdio.h%3E%0A%23include%20%3Cstdlib.h%3E%0A%0Atypedef%20struct%20Node%20%7B%0A%20%20%20%20int%20data%3B%0A%20%20%20%20struct%20Node*%20next%3B%0A%7D%20Node%3B%0A%0Aint%20main%28%29%20%7B%0A%0A%20%20%20%20//%20Linkedlist%20in%20Stack%0A%20%20%20%20//%20Node%20a,%20b,%20c%3B%0A%20%20%20%20//%20a.data%20%3D%201%3B%0A%20%20%20%20//%20a.next%20%3D%20%26b%3B%0A%20%20%20%20//%20b.data%20%3D%202%3B%0A%20%20%20%20//%20b.next%20%3D%20%26c%3B%0A%20%20%20%20//%20c.data%20%3D%203%3B%0A%20%20%20%20//%20c.next%20%3D%20NULL%3B%0A%20%20%20%20%0A%20%20%20%20//%20LinkedList%20in%20Heap%0A%20%20%20%20%0A%20%20%20%20Node*%20a%20%3D%20malloc%28sizeof%28Node%29%29%3B%0A%20%20%20%20Node*%20b%20%3D%20malloc%28sizeof%28Node%29%29%3B%0A%20%20%20%20Node*%20c%20%3D%20malloc%28sizeof%28Node%29%29%3B%0A%20%20%20%20a-%3Edata%20%3D%201%3B%0A%20%20%20%20a-%3Enext%20%3D%20b%3B%0A%20%20%20%20b-%3Edata%20%3D%202%3B%0A%20%20%20%20b-%3Enext%20%3D%20c%3B%0A%20%20%20%20c-%3Edata%20%3D%203%3B%0A%20%20%20%20c-%3Enext%20%3D%20NULL%3B%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20return%200%3B%0A%7D&cumulative=false&curInstr=10&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=c_gcc9.3.0&rawInputLstJSON=%5B%5D&textReferences=false)
 
 ---
 
