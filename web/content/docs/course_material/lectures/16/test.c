@@ -10,5 +10,6 @@ int main() {
   for(int i = 0; i < n*m*n; i++) {
     printf("%d ", array[i]);
   }
+  
   return 0;
 }

@@ -9,14 +9,13 @@ revealjs_config:
 
 # Linked Lists
 
+---
+
 ## Problem: Large Arrays!
 ```c
 #define MAX_MEMBERS 100
 
-typedef struct SocialNet {
-    Person members[MAX_MEMBERS];
-    int size;
-} SocialNet;
+Person members[MAX_MEMBERS];
 ```
 
 ---
@@ -32,7 +31,6 @@ typedef struct Node {
     struct Node* next;
 } Node;
 
-typedef Node* LinkedList;
 
 Node third = {
     {"Alice", 22},
@@ -47,14 +45,16 @@ Node first = {
     &second
 };
 
-LinkedList L = &first;
+Node* list = &first;
+
+
 
 ```
-
+[Pythontutor](https://pythontutor.com/render.html#code=%23include%20%3Cstdio.h%3E%0A%0Atypedef%20struct%20Person%20%7B%0A%20%20char%20name%5B10%5D%3B%0A%20%20int%20age%3B%0A%20%20struct%20Person*%20friends%5B3%5D%3B%0A%7D%20Person%3B%0A%0Atypedef%20struct%20Node%20%7B%0A%20%20Person%20data%3B%0A%20%20struct%20Node*%20next%3B%0A%7D%20Node%3B%0A%0Avoid%20print_list%28Node*%20list%29%20%7B%0A%20%20while%20%28list%20!%3D%20NULL%29%20%7B%0A%20%20%20%20printf%28%22%25s%5Ct%25d%5Cn%22,%20list-%3Edata.name,%20list-%3Edata.age%29%3B%0A%20%20%20%20list%20%3D%20list-%3Enext%3B%0A%20%20%7D%0A%7D%0A%0A%0Aint%20main%28%29%20%7B%0A%0A%20%20Node%20third%20%3D%20%7B%0A%20%20%20%20%7B%22Alice%22,%2022%7D,%0A%20%20%20%20NULL%0A%20%20%7D%3B%0A%20%20%0A%20%20Node%20second%20%3D%20%7B%0A%20%20%20%20%7B%22Bob%22,%2026%7D,%0A%20%20%20%20%26third%0A%20%20%7D%3B%0A%20%20%0A%20%20Node%20first%20%3D%20%7B%0A%20%20%20%20%7B%22Charlie%22,%2020%7D,%0A%20%20%20%20%26second%0A%20%20%7D%3B%0A%20%20%0A%20%20print_list%28%26first%29%3B%0A%0A%20%20return%200%3B%0A%7D&cumulative=false&curInstr=18&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=c_gcc9.3.0&rawInputLstJSON=%5B%5D&textReferences=false)
 ---
 ## Size of a Liniked List
 ```c
-int size(LinkedList l) {
+int size(Node* l) {
     int s = 0;
     while (l != NULL) {
         l = l->next;
@@ -65,7 +65,7 @@ int size(LinkedList l) {
 ```
 ### A recursive solution
 ```c
-int size(LinkedList l) {
+int size(Node* l) {
     return l==NULL? 0: size(l->next) + 1;
 }
 ```
@@ -73,7 +73,7 @@ int size(LinkedList l) {
 ## Printing elements of a linked list
 
 ```c
-void print_list(LinkedList l) {
+void print_list(Node* l) {
     while (l != NULL) {
         printf("%s\t\t%d\n",l->data.name, l->data.age);
         l = l->next;   
@@ -84,7 +84,7 @@ void print_list(LinkedList l) {
 
 ## Find the element at the ith position
 ```c
-Person* element_at(int pos, LinkedList l) {
+Person* element_at(int pos, Node* l) {
     int s = 0;
     while (l != NULL) {
         if (s == pos) return &(l->data);
@@ -96,7 +96,7 @@ Person* element_at(int pos, LinkedList l) {
 ```
 ### A recursive solution
 ```c
-Person* element_at_recursive(int pos, LinkedList l) {
+Person* element_at_recursive(int pos, Node* l) {
     // TODO
     if (l==NULL) return NULL;
     if (pos == 0)   {return &(l->data);}
@@ -108,13 +108,13 @@ Person* element_at_recursive(int pos, LinkedList l) {
 ---
 ## Append element to end of the list
 ```c
-LinkedList append(Person p, LinkedList l) {
+Node* append(Person p, Node* l) {
     // Node D = {{"Raj", 18}, NULL}; Local Variable! Will not work.
     Node* D = (Node *) malloc(sizeof(Node));
     D->data = p;
     D->next = NULL;
     if (l == NULL) return D; // if l is empty just return D.
-    LinkList i = l;
+    Node* i = l;
     while (i->next != NULL) {
         i = i->next;
     }
@@ -125,99 +125,106 @@ LinkedList append(Person p, LinkedList l) {
 ---
 ## Full code
 ```c
-#include "stdio.h"
-#include "stdlib.h"
-#define MAX_NAME_LEN 100
+#include <stdio.h>
+#include <stdlib.h>
 
 typedef struct Person {
-    char name[MAX_NAME_LEN];
-    int age;
+  char name[10];
+  int age;
+  struct Person* friends[3];
 } Person;
 
 typedef struct Node {
-    Person data;
-    struct Node* next;
+  Person data;
+  struct Node* next;
 } Node;
 
-typedef Node* LinkedList;
+void print_list(Node* list) {
+  while (list != NULL) {
+    printf("%s\t%d\n", list->data.name, list->data.age);
+    list = list->next;
+  }
+}
 
-void print_list(LinkedList l) {
-    printf("-----------------------------------\n");
-    while (l != NULL) {
-        printf("%s\t\t%d\n",l->data.name, l->data.age);
-        l = l->next;   
+int size(Node* list) {
+ // return number of elements in the list 
+// int s = 0;
+//   while (list != NULL) {
+//     s++;
+//     list = list->next;
+//   }
+// return s;
+  return list == NULL? 0: 1+ size(list->next);
+}
+
+Person* element_at(Node* list, int pos) {
+  // return the element at the 'pos' position of the linked list
+  int s = 0;
+  while (list != NULL) {
+    if (s == pos) return &(list->data);
+    s++;
+    list = list->next;
+  }
+  return NULL;
+  // return pos == 0? &(list->data) : element_at(list->next, pos-1);
+}
+
+Node* append(Node* list, Person* data) {
+  // add new person data as the last element in the list
+  // and return the pointer to the first element in the list.
+  
+  Node* new_element = malloc(sizeof(Node));
+  new_element->data = *data;
+  new_element->next = NULL;
+
+  if (list != NULL) {
+    Node* head = list;
+    while (list->next != NULL) {
+      list = list->next;
     }
-    printf("-----------------------------------\n");
+    list->next = new_element;
+    return head;
+  } else return new_element;
+  
 }
 
-int size(LinkedList l) {
-    int s = 0;
-    while (l != NULL) {
-        l = l->next;
-        s ++;
-    }
-    return s;
-    // Simpler recursive solution
-    //     return l==NULL? 0: size(l->next) + 1; 
-}
-
-Person* element_at(int pos, LinkedList l) {
-    int s = 0;
-    while (l != NULL) {
-        if (s == pos) return &(l->data);
-        l = l->next;
-        s ++;
-    }
-    return NULL;
-}
-
-Person* element_at_recursive(int pos, LinkedList l) {
-    // TODO
-    if (l==NULL) return NULL;
-    if (pos == 0)   {return &(l->data);}
-    else { return element_at(pos-1, l->next); }
-    
-    // return pos == 0 ? &(l->data): element_at(pos-1, l->next);
-}
-
-LinkedList append(Person p, LinkedList l) {
-
-    // Node D = {{"Raj", 18}, NULL};
-    Node* D = (Node *) malloc(sizeof(Node));
-    D->data = p;
-    D->next = NULL;
-    if (l == NULL) return D;
-    while (l->next != NULL) {
-        l = l->next;
-    }
-    l->next = D;
-    return l;
-}
 
 int main() {
-    Node third = {
-        {"Alice", 22},
-        NULL
-    };
-    Node second = {
-        {"Bob", 26},
-        &third
-    };
-    Node first = {
-        {"Charlie", 20},
-        &second
-    };
-    Person D = {"Raj", 18};
 
-    LinkedList l = &first;
-    printf("Size of the list is %d\n", size(l));
-    print_list(l);
-    printf("Element at 1st position: %s\n", element_at(1,l)->name);
-    printf("Element at 2nd position: %s\n", element_at(2,l)->name);
-    append(D, l);
-    printf("List after appending\n");
-    print_list(l);
-    return 0;
+  Node third = {
+    {"Alice", 22},
+    NULL
+  };
+  
+  Node second = {
+    {"Bob", 26},
+    &third
+  };
+  
+  Node first = {
+    {"Charlie", 20},
+    &second
+  };
+  
+  print_list(&first);
+  int s = size(&first);
+  printf("size of list is %d.\n", s);
+  for (int i = 0; i < s; i++) {
+    Node* s = element_at(&first, i);
+    printf("%dth element is %s.\n", i, s->data.name);
+  }
+  
+  Person new_person = { "Diestel", 27 };
+  Node* list = append(&first, &new_person);
+  print_list(&first);
+  s = size(&first);
+  printf("size of list is %d.\n", s);
+  for (int i = 0; i < s; i++) {
+    Node* s = element_at(&first, i);
+    printf("%dth element is %s.\n", i, s->data.name);
+  }
+
+  return 0;
 }
 ```
 ---

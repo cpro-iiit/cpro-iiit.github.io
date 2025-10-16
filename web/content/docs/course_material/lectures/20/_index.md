@@ -83,8 +83,7 @@ rectangle* scale(rectangle* r, float s) {
 	return r;
 }
 
-int main()
-{
+int main() {
 	rectangle rect = {  .breadth = 1.0, .length = 3.0} /* {3.0, 1.0 }*/; 		
 	// rect.length = 3.2;
 	// rect.breadth = 1.2;
