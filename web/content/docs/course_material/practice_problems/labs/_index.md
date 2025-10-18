@@ -78,3 +78,13 @@ http://cses.fi/problemset/task/1074
 https://cses.fi/problemset/task/1090
 
 https://cses.fi/problemset/task/1084
+
+## Pointers + Structs
+
+https://leetcode.com/problems/sort-the-people/description/
+
+https://oj-test.iiit.ac.in/problem/cpro25q
+
+https://oj-test.iiit.ac.in/problem/cpro25lab7secc
+
+https://cses.fi/problemset/task/1622
