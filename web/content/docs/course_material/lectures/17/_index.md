@@ -233,6 +233,7 @@ int main() {
 ```
 
 ---
+
 ## HW: Insert element at a position in the list and return pointer to first element
 
 ```c
@@ -242,6 +243,7 @@ Node* insert(Person p, int pos, Node* l) {
 ```
 
 ---
+
 ## HW: Concatenate 2 lists and return pointer to first element
 ```c
 Node* concat(Node* l1, Node* l2) {
@@ -251,6 +253,7 @@ Node* concat(Node* l1, Node* l2) {
 
 
 ---
+
 ## HW: Reverse a list and return pointer to first element
 ```c
 Node* reverse(Node* l) {

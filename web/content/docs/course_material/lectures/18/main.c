@@ -1,90 +1,3 @@
----
-title: "L18: Linked Lists II"
-bookHidden: false
-marp: true
-header: 'CS0.101 Computer Programming (Monsoon 24)'
-footer: '![width:125px](IIIT_Hyderabad_Logo.jpg)'
-revealjs_config:
-  slideNumber: true
----
-
-
-## HW: Insert element at a position in the list and return pointer to first element
-
-```c
-
-Node* insert(Person p, int pos, Node* l) {
-    // TODO
-    
-    Node* n = malloc(sizeof(Node));
-    n->data = p;
-    n->next = NULL;
-    Node* head = l;
-    
-    if (pos > 0) {
-      int i = pos - 1;
-      while (i > 0 && l != NULL) {
-        l = l->next;
-        i--;
-      }
-      
-      Node* tmp = l->next;
-      l->next = n;
-      n->next = tmp;
-      return head;
-    } else {
-      n->next = l;
-      return n;
-    }
-    
-}
-```
-
----
-
-## HW: Concatenate 2 lists and return pointer to first element
-```c
-Node* concat(Node* l1, Node* l2) {
-    // TODO
-    if (l1 == NULL) return l2;
-    Node* head  = l1;
-    while(l1 != NULL && l1->next != NULL) {
-      l1 = l1->next;
-    }
-    l1->next = l2;
-    return head;
-}
-```
-
-
----
-
-## HW: Reverse a list and return pointer to first element
-```c
-Node* reverse(Node* l) {
-     if (l == NULL) return l;
-
-    Node* current_node = l->next;
-    Node* previous_node = l;
-    previous_node->next = NULL;
-
-    while (current_node != NULL) {
-      Node* tmp = current_node->next;
-      current_node->next = previous_node;
-      previous_node = current_node;
-      current_node = tmp;
-    }
-    return previous_node;
-
-}
-```
-
----
-
-
-## Full Code
-
-```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -254,11 +167,9 @@ int main() {
 
   Node* rev = reverse(full);
   print_list(rev);
+
+
   
+
   return 0;
 }
-
-```
-
----
-
