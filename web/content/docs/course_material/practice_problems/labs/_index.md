@@ -88,3 +88,17 @@ https://oj-test.iiit.ac.in/problem/cpro25q
 https://oj-test.iiit.ac.in/problem/cpro25lab7secc
 
 https://cses.fi/problemset/task/1622
+
+## Dynamic Programming (DP)
+
+THis is a contest on Atcoder having 26 DP Problems - https://atcoder.jp/contests/dp/tasks. The initial few ones (first 4) are worth solving for now.
+
+CSES DP (Dynamic Programming) Section is also a great place to practice DP. For this week, you can attempt these problems -
+
+https://cses.fi/problemset/task/1633
+
+https://cses.fi/problemset/task/1634
+
+https://cses.fi/problemset/task/1635
+
+https://cses.fi/problemset/task/1638
