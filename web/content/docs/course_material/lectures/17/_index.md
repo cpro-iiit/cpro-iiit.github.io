@@ -231,27 +231,29 @@ int main() {
   return 0;
 }
 ```
+
 ---
-## HW: Insert element at a position in the list
+## HW: Insert element at a position in the list and return pointer to first element
+
 ```c
-LinkedList insert(Person p, int pos, LinkedList l) {
+Node* insert(Person p, int pos, Node* l) {
     // TODO
 }
 ```
 
 ---
-## HW: Concatenate 2 lists
+## HW: Concatenate 2 lists and return pointer to first element
 ```c
-LinkedList concat(LinkedList l1, LinkedList l2) {
+Node* concat(Node* l1, Node* l2) {
     // TODO
 }
 ```
 
 
 ---
-## HW: Reverse a list
+## HW: Reverse a list and return pointer to first element
 ```c
-LinkedList reverse(LinkedList l) {
+Node* reverse(Node* l) {
     // TODO
 }
 ```
