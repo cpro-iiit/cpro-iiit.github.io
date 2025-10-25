@@ -30,6 +30,8 @@ IIITH students can access the following courses in Coursera for __free__ (IIITH 
 
 ## References from the web
 
+- [C Classroom](https://dyclassroom.com/c/c-introduction)
+
 - [Visualize C Code Execution](https://pythontutor.com/c.html#mode=edit)
 
 - [Dive into C Textbook](https://diveintosystems.org/book/C1-C_intro/index.html)
