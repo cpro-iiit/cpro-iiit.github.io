@@ -108,15 +108,19 @@ https://cses.fi/problemset/task/1638
 Resources - 
 
 https://usaco.guide/silver/binary-search?lang=cpp
+
 https://usaco.guide/silver/binary-search?lang=cpp
 
 Problems - 
 
 https://usaco.org/index.php?page=viewproblem2&cpid=666
+
 https://www.spoj.com/problems/AGGRCOW/
+
 https://cses.fi/problemset/task/1620
 
 ## Prefix Sums
 
 Resource - https://usaco.guide/silver/prefix-sums?lang=cpp
+
 Problem - https://judge.yosupo.jp/problem/static_range_sum
