@@ -1,6 +1,6 @@
 ---
-title: "L20: Structs, Strings and GDB"
-bookHidden: true
+title: "L20: Enums and more Struct Examples"
+bookHidden: false
 marp: true
 header: 'CS0.101 Computer Programming (Monsoon 24)'
 revealjs_config:
@@ -9,176 +9,299 @@ revealjs_config:
 
 
 
-## Recall Structs: Rectangle Example
+## Social Network
 
+| Name    | Age | Rel Status    | Friends              |
+|---------|-----|---------------|----------------------|
+| Alice   | 24  | Single        | Diestel, Eve        |
+| Bob     | 28  | Maried        | Alice                |
+| Charlie | 20  | Single        | Diestel              |
+| Diestel | 27  | Not Mentioned | Alice, Eve, Charlie |
+| Eve     | 25  | Engaged       | Diestel, Alice       |
+
+---
+
+## Define a Person (Profile)
 
 ```c
-#include<stdio.h>
-struct rectangle {
-	float length;
-	float breadth;
+
+struct Person {
+    char name[100];
+    int age;
+    int rel_status;
+};
+```
+Implemeting Rel Status as int, requires us to keep in mind the mapping between Single, Maried, Not Mentioned, Engaged and integers.
+
+{{<hint info>}}
+Can we specify this in code??
+{{</hint>}}
+
+---
+
+## Enums
+```c
+typedef enum Weekday {
+    Sunday, 
+    Monday, 
+    Tuesday, 
+    Wednesday, 
+    Thursday, 
+    Friday, 
+    Saturday
+} Weekday;
+```
+```c
+Weekday today = Wednesday;
+printf("Day %d",today+1); 
+printf("Size of enum variable = %d bytes", 
+        sizeof(today));	
+```
+---
+## Enums : Changing default values
+```c
+typedef enum Weekday {
+    Sunday = 1, 
+    Monday, 
+    Tuesday, 
+    Wednesday, 
+    Thursday, 
+    Friday, 
+    Saturday
+} Weekday;
+```
+```c
+Weekday today = Wednesday;
+printf("Day %d",today+1);
+```
+---
+## Enums : interchangable with int
+```c
+#include "stdio.h"
+
+typedef enum Weekday {
+    Sunday = 5, 
+    Monday = 3, 
+    Tuesday, 
+    Wednesday = 2, 
+    Thursday, 
+    Friday, 
+    Saturday
+} Weekday;
+
+int main() {
+    Weekday today = Wednesday;;
+    printf("Day %d\n",today+1);
+    printf("Size of enum variable = %d bytes", 
+            sizeof(today));	
+    return 0 ;
+}
+```
+---
+## Define a Person (Profile)
+
+```c
+enum RelStatus {
+    NotMentioned,
+    Single,
+    Engaged,
+    Married
 };
 
-float compute_area(struct rectangle r) {
-	return r.length * r.breadth;
-}
+struct Person {
+    char name[100];
+    int age;
+    enum RelStatus status;
+};
+```
 
-void print_rectangle(struct rectangle r) {
-	printf("Rectangle with length %f and breadth %f\n", r.length, r.breadth);
-}
+---
 
-int main()
-{
-	struct rectangle rect = { 1.5, 3.2 }; // Initializer 		
-	print_rectangle(rect);
-	printf("Area of the rectangle is %f \n", compute_area(rect) );
-} 
+## Social Nets
+```c
+typedef enum RelStatus {
+    NotMentioned,
+    Single,
+    Engaged,
+    Married
+} RelStatus;
+
+typedef struct Person {
+    char name[100];
+    int age;
+    RelStatus relstatus;
+} Person;
+
+typedef struct SocialNet {
+    Person members[100];
+    int size;
+} SocialNet;
 ```
 ---
-## Struct with Typedef
-```c
-#include<stdio.h>
-typedef struct rectangle {
-	float length;
-	float breadth;
-} rectangle;
 
-float compute_area(rectangle r) {
-	return r.length*r.breadth;
-}
+## Intitializer
 
-rectangle scale(rectangle r, float s) {
-	r.length = r.length*s;
-	r.breadth = r.breadth*s;
-	return r;
-}
+| Name    | Age | Rel Status    |
+|---------|-----|---------------|
+| Alice   | 24  | Not Mentioned | 
+| Bob     | 28  | Maried        | 
+| Charlie | 20  | Single        | 
 
-int main()
-{
-	rectangle rect = {  .breadth = 1.0, .length = 3.0} /* {3.0, 1.0 }*/; 		
-	// rect.length = 3.2;
-	// rect.breadth = 1.2;
-	printf("Area of the rectangle is %f \n", compute_area(rect));
-	rectangle rp = scale(rect, 5);
-	printf("Area of the rectangle is %f \n", compute_area(rp));
-	printf("Area of the rectangle is %f \n", compute_area(rect));
-} 
-```
 ---
-## Passing using pointers
-```c
-#include<stdio.h>
-typedef struct rectangle {
-	float length;
-	float breadth;
-} rectangle;
 
-float compute_area(rectangle r) {
-	return r.length*r.breadth;
+```c
+int main() {
+    SocialNet social_net = {
+        .members = {
+            { "Alice",    24,  NotMentioned},
+            { "Bob",      28,  Married},
+            { "Charlie",  20,  Single},
+        } ,
+        .size = 3
+    };
+    print_network(social_net);
+    return 0;
+}
+```
+
+---
+## Print Person
+```c
+void print_person(struct Person p) {
+    // TODO (solution at the end of page)
 }
 
-rectangle* scale(rectangle* r, float s) {
-	r->length = r->length*s;
-	r->breadth = r->breadth*s;
-	return r;
+void print_network(SocialNet social_net) {
+    printf(
+        "----------------------------------------------\n"
+        "Name\t\tAge \t Rel Status\n"
+        "----------------------------------------------\n");
+    for (int i=0;i <social_net.size; i++) {
+        print_person(social_net.members[i]);
+    }
+    printf("----------------------------------------------\n");
+}
+```
+
+---
+
+## Full Code for Social Net
+
+
+###  HomeWork: change the code to print all the names of friends of the person in 4th column
+```c
+#include <stdio.h>
+#include <string.h>
+
+typedef enum RelStatus {
+	NotMentioned,
+	Single,
+	Engaged,
+	Married
+} RelStatus;
+
+
+typedef struct Person {
+	char name[100];
+	int age;
+	RelStatus status;
+	int friends[10];
+	int friends_size;
+} Person;
+
+typedef struct SocialNet {
+	Person members[100];
+	int size;
+} SocialNet;
+
+
+void print_person(Person* p) {
+	char status_string[4][30] = {
+		{ "Not Mentioned"},
+		{ "Single" },
+		{ "Engaged"},
+		{ "Married" }
+	};
+	printf("%s\t%d\t%s\n", p->name, p->age, status_string[p->status]);
+}	
+
+void print_socialnet(SocialNet *s) {
+	printf("------------------------------\n");
+	printf("Name\tAge\tRelationship Status\tFriends\n");
+	printf("------------------------------\n");
+	for (int i = 0; i < s->size; i++ ) {
+		// HomeWork: change the code to print all the names of friends of the person in 4th column
+		print_person(&(s->members[i]));
+	}
+	printf("------------------------------\n");
 }
 
 int main() {
-	rectangle rect = {  .breadth = 1.0, .length = 3.0} /* {3.0, 1.0 }*/; 		
-	// rect.length = 3.2;
-	// rect.breadth = 1.2;
-	printf("Area of the rectangle is %f \n", compute_area(rect));
-	rectangle* rp = scale(&rect, 5);
-	printf("Area of the rectangle is %f \n", compute_area(*rp));
-	printf("Area of the rectangle is %f \n", compute_area(rect));
-} 
+	SocialNet s = {
+		.members = {
+			{ "Ramu", 19, Single, {1,2}, 2},
+			{ "Ammu", 21, Engaged, {2}, 1},
+			{ "Vinod", 24, Married, {0}, 1}
+		},
+		.size = 3
+	};
+	print_socialnet(&s);
+
+	return 0;
+}
 ```
+
 ---
 
 
-## Strings in C
-- as a pointer to char
-```c
-char *p = "abcde";
-```
-- as an array of char
-```c
-char s[] = "abcde";
-```
+## Commandline Argument
 
-![](string_fig.png)
+An easier way to take input from the user in shell.
+
+
+
+---
+
+## Commandline Argument
 
 ```c
-print("%d %d", sizeof(p), sizeof(s));
+#include <stdio.h>
+int main(int argc, char* argv[]) {
+    printf("The number of arguments is %d\n", argc);
+
+    for (int i = 0; i < argc; i++) {
+        printf("%d Argument: %s\n", i, argv[i]);    
+    }
+    return 0;
+}
 ```
 ---
-## String Function Implementation
+
+## Problem
+Write a program that takes the First Name Last Name Age 
+as commandline arguments and prints it as follows
+  First Name: <first arg>   
+  Last name : <sec arg>  
+  Age       : <third arg>  
+
+---
+
+## Solution
 
 ```c
 #include "stdio.h"
 
-int strlenB(char* s) {
-	int i = 0;
-	while (s[i] != '\0') {
-		i++;
-	}
-	return i;
-}
+int main(int argc, char* argv[]) {
+    
+    if (argc != 4) {
+        printf("Incorrect number of arguments provided.\n");
+        return 0;
+    }
 
-char* strcpyB(char *s, char *d) {
-	int len_s = strlenB(s);
-	for(int i = 0; i <= len_s;i++) {
-		d[i] = s[i];
-	}
-	return d;
-}
-
-char* str_rev(char *s, char *d) {
-	int len_s = strlenB(s);
-	for(int i = 0; i< len_s; i++) {
-		d[i] = s[len_s - 1 - i];
-	}
-	d[len_s] = '\0';
-	return d;
-}
-
-int main() {
-	char *p = "xyz\0dsalkfjds";
-	char s[] = "abcde\0kjdakfjsh"; // abcde\0
-
-	// printf("%d %d\n",sizeof(p),sizeof(s));
-	// printf("%s %s\n",p, s);
-	// printf("%d %d\n", strlen(p), strlen(s));
-	// strcpy(s,p);
-	printf("%s\n",str_rev(p, s));
-
-	return 1;
-}
+    printf("First Name:\t%s\n", argv[1]);
+    printf("Last Name :\t%s\n", argv[2]);
+    printf("Age       :\t%s\n", argv[3]);
+    return 0;
+ }
 ```
 ---
-## String Functions
-
-`#include <string.h>`
-
-- `int strlen(char *s)`: returns the length of the string pointed by s (ie lenth upto the first `\0` in memory).
-- `char* strcat(char* s1, char* s2)`: concatenates s1 with s2, stores it in s1 and returns s1.
-- `int strcmp(char *s1,char *s2)`: returns negative int if s1 is lex. smaller than s2, returns 0 if equal, returns positive int if s1 is lex. greater than s2.
-- `char* strcpy(char* s1, char* s2)`: copies s2 in to s1 and returns s1.
-
----
-## Debugger
-
-
-
-[GDB Cheatsheet](https://darkdust.net/files/GDB%20Cheat%20Sheet.pdf)   
-
-[GDB Tutorial Slides UMD](https://www.cs.umd.edu/~srhuang/teaching/cmsc212/gdb-tutorial-handout.pdf)  
-
----
-
-## Summary
-- Struct with Typedef
-- Passing Struct with Pointer
-- Struct pointer accessing fields notation
-- Recalling Strings in C
-- Debugger

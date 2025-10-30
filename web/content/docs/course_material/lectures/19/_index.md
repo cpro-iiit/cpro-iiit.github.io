@@ -2,7 +2,7 @@
 title: "L19: Pointer Quirks & Practice Problems"
 bookHidden: false
 marp: true
-header: 'CS0.101 Computer Programming (Monsoon 25)'
+header: 'CS0.101 Computer Programming (Monsoon 25	)'
 
 revealjs_config:
   slideNumber: true
