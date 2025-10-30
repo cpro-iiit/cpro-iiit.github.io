@@ -305,3 +305,74 @@ int main(int argc, char* argv[]) {
  }
 ```
 ---
+
+HW: Implement Social Network Functions in the code bellow:
+
+[Code](https://onlinegdb.com/FSEbzuQaH)
+
+---
+
+HW: Implement Bank Functions in the code bellow:
+
+[Code](https://onlinegdb.com/qsB3PBs4y)
+
+---
+
+HW: Enumerating arrangement of k items from n objects
+
+Fill in the function in the code bellow:
+
+[Code](https://onlinegdb.com/LG9qZLncHr)
+
+---
+
+
+In the questions bellow LinkedList is defined as follows:
+
+```c
+
+typedef struct Node Node;
+
+typedef Node* LinkedList;
+
+struct Node {
+    int data;
+    struct Node* next;
+};
+
+```
+
+## HW: Reverse a LinkedList in place
+```c
+void reverse_inplace(LinkedList l) {
+    // If l is a->b->c->d 
+    // after executing reverse_inplace(l) 
+    // l should become d->c->b->a
+    // the function also should not use another linkedlist or array
+}
+```
+
+## HW: Shuffle 2 lists
+```c
+LinkedList shuffle(LinkedList l1, LinkedList l2) {
+    // If l1 is a->b->c->d and l2 is 1->2->3->4
+    // shuffle(l1,l2) should return the list
+    // a->1->b->2->c->3->d->4
+}
+```
+Can you make the above function also `in place`? That is it should not use any additional array or linked list other than l1 and l2.
+
+## HW: Free memory in a LinkedList
+```c
+void free(LinkedList l) {
+    // free all memory used by a linked list l
+}
+```
+
+
+## HW: Sort a LinkedList
+```c
+LinkedList sort(LinkedList l) {
+    // sort the linked list l and return it.
+}
+```
