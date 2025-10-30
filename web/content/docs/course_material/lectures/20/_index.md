@@ -1,5 +1,5 @@
 ---
-title: "L20: Enums and more Struct Examples"
+title: "L20: Enums, Commandline Args and Practice Problems"
 bookHidden: false
 marp: true
 header: 'CS0.101 Computer Programming (Monsoon 24)'
@@ -305,6 +305,10 @@ int main(int argc, char* argv[]) {
  }
 ```
 ---
+
+# Practice Problems
+
+--- 
 
 HW: Implement Social Network Functions in the code bellow:
 
