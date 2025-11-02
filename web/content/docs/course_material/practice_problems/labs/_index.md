@@ -11,10 +11,6 @@ footer: '![width:100px](IIIT_Hyderabad_Logo.jpg)'
 
 https://www.geeksforgeeks.org/c/pattern-programs-in-c/
 
-## Strings
-
-https://cses.fi/problemset/task/1069
-
 ## Frequency Arrays
 
 https://leetcode.com/problems/count-elements-with-maximum-frequency/description/
@@ -124,3 +120,19 @@ https://cses.fi/problemset/task/1620
 Resource - https://usaco.guide/silver/prefix-sums?lang=cpp
 
 Problem - https://judge.yosupo.jp/problem/static_range_sum
+
+## Linked List
+
+https://leetcode.com/problems/merge-two-sorted-lists/description/?envType=problem-list-v2&envId=linked-list
+
+https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/?envType=problem-list-v2&envId=linked-list
+
+https://leetcode.com/problems/remove-linked-list-elements/description/?envType=problem-list-v2&envId=linked-list
+
+## Strings
+
+https://cses.fi/problemset/task/1622
+
+https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/?envType=problem-list-v2&envId=string
+
+https://leetcode.com/problems/valid-palindrome/description/?envType=problem-list-v2&envId=string
