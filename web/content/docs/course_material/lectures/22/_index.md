@@ -17,5 +17,8 @@ revealjs_config:
 
 Read, understand, implement and test functions in the code: https://onlinegdb.com/fOgZ6HXyKw 
 
+You may need to download this code locally (copy paste to local c file).
+
+Make sure your implementation pass all the test cases (option 15)
 
 ---
