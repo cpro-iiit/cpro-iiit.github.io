@@ -1,0 +1,8 @@
+4
+GV
+CD
+EF
+AB
+GV,CD
+CD,AB
+EF,AB
