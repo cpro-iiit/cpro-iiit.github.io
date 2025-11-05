@@ -25,6 +25,12 @@ Make sure your implementation pass all the test cases (option 15)
 
 ---
 
+## Installing GDB and Make
+
+See directions [here](/install)
+
+---
+
 
 ## 🧩 Why Modularize Code?
 
