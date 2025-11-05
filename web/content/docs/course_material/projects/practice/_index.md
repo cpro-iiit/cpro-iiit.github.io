@@ -287,7 +287,7 @@ Modularize the code, by splitting it into several files/folders and have a makef
 
 ---
 
-## Project 10: Image editor
+### Project 10: Image editor
 
 Learn about the [PPM image format](https://en.wikipedia.org/wiki/Netpbm) and complete the exercises in the code: [image editor](./image_editor.c).
 
@@ -295,7 +295,7 @@ Also modularize the code by splitting it into headers, .c files, include, src fo
 
 ---
 
-## Project 11 - Jon Conway's Game of Life
+### Project 11 - Jon Conway's Game of Life
 
 Read about John Conway's Game of life:
 - https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life 
