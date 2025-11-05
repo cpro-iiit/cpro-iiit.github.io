@@ -271,6 +271,18 @@ Deposit 500 → Balance = 500.00
 Withdraw 100 → Balance = 400.00
 ```
 
+---
+
+### Project 9 - Fractals
+
+Read about Fractals, Madelbrot Set and BMP image format:
+- https://en.wikipedia.org/wiki/Fractal.  
+- https://en.wikipedia.org/wiki/Mandelbrot_set 
+- https://en.wikipedia.org/wiki/BMP_file_format 
+
+Understand the code for generating a BMP image of Madelbrot Set Fractal here: [madelbrot](./madelbrot.c). There are also several exercises given in the comments, including modifying the code to generate the [Julia set](https://en.wikipedia.org/wiki/Julia_set), which you can try.  
+ 
+Modularize the code, by splitting it into several files/folders and have a makefile.
 
 ---
 
