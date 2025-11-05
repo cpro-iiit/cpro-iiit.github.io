@@ -295,6 +295,14 @@ Also modularize the code by splitting it into headers, .c files, include, src fo
 
 ---
 
+## Project 11 - Jon Conway's Game of Life
+
+Read about John Conway's Game of life:
+- https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life 
+- https://playgameoflife.com/ 
+
+Complete the c code implementing it here: [gameoflife.c](./gameoflife.c)
+
 # 🗂️ Submission & Documentation Checklist
 
 ### 1. Cover Page
