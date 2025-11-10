@@ -1,5 +1,5 @@
 ---
-title: Installation
+title: Installation (GDB, Valgrind)
 menu:
   after:
     name: install
