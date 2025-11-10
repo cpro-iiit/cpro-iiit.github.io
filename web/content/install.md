@@ -6,10 +6,10 @@ menu:
     weight: 9
 ---
 
-# 🧰 Installing `GDB` and `Make` on macOS and Windows
+# 🧰 Installing `GDB`, `Make` and `Valgrind`  on macOS and Windows
 
 This guide provides detailed, step-by-step instructions to install and configure  
-**GNU Debugger (GDB)** and **GNU Make** on both **macOS** and **Windows** systems.
+**GNU Debugger (GDB)**, **GNU Make** and **Valgrind** on both **macOS** and **Windows** systems.
 
 ---
 
@@ -32,6 +32,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 ```bash
 brew install make
 brew install gdb
+brew install valgrind
 ```
 
 > ℹ️ **Note:** macOS ships with Apple’s version of `make`.  
@@ -81,6 +82,7 @@ If no “not codesigned” error appears, setup is complete!
 ```bash
 make --version
 gdb --version
+valgrind --version
 ```
 
 Expected output: version numbers for both tools (GNU Make ≥ 4.x, GDB ≥ 13.x)
@@ -164,13 +166,14 @@ wsl --install -d Ubuntu
 Inside the Ubuntu terminal:
 ```bash
 sudo apt update
-sudo apt install build-essential gdb -y
+sudo apt install build-essential gdb valgrind -y
 ```
 
 #### Step 3. Verify
 ```bash
 make --version
 gdb --version
+valgrind --version
 ```
 
 ---
