@@ -15,6 +15,8 @@ In this lectue, we will go over a program that computes the trajectory of rocket
 
 Please go over the code in : [main.c](./main.c)
 
+Read about BMP image files: https://en.wikipedia.org/wiki/BMP_file_format 
+
 Try the following:
 - Modularize the code into a multifile program
 - Add a Makefile
