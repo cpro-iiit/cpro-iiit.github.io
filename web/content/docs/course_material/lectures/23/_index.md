@@ -323,3 +323,13 @@ int main() {
 | Array of Function Pointers | `ops[] = {add, sub}` | Dynamic dispatch |
 | Function Pointer Argument | `filter(nums, n, is_even)` | Higher-order behavior |
 | Function Pointer in Library | `qsort()` | Custom comparison |
+
+
+---
+
+## Home Work
+
+Read and understand how to use the generic bsearch function from c std library: https://en.cppreference.com/w/c/algorithm/bsearch.html
+
+Use the bsearch function to find the index of Student with specific mark or specific name, in the examples above.
+
