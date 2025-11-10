@@ -150,7 +150,7 @@ Hints:
 
 - AverageSpeed = total_distance / simulation_time.
 
-## Exercise 3.2 — Reload and Plot Trails
+### Exercise 3.2 — Reload and Plot Trails
 
 Goal: Read the stored binary or text trajectory file and re-render them into a new BMP image (without re-running simulation).
 
