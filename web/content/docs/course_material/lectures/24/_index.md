@@ -197,3 +197,11 @@ dt=0.01
 frames=200
 save_interval=50
 ```
+
+---
+## Solution Repository
+
+https://github.com/cpro-iiit/rocket_sim 
+
+
+---
