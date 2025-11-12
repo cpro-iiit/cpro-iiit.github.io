@@ -40,7 +40,7 @@ Go through bellow:
 
 - Generative AI: https://arxiv.org/html/2509.26538v1#S4
 - Google Maps: https://blog.christianperone.com/2015/08/googles-s2-geometry-on-the-sphere-cells-and-hilbert-curve/?a=2
-
+- https://www.youtube.com/watch?v=OcUKFIjhKu0
 
 
 ## Student Exercises
