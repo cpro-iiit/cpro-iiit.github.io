@@ -9,7 +9,7 @@ revealjs_config:
 
 # Rocket Trajectories in the Solar System
 
-In this lectue, we will go over a program that computes the trajectory of rockets in a solar system.
+In this lecture, we will go over a program that computes the trajectory of rockets in a solar system.
 
 ---
 
