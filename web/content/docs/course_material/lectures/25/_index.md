@@ -16,6 +16,10 @@ A C program that generates 2D Hilbert space-filling curves and outputs them as B
 
 ![alt text](image.png)
 
+https://www.youtube.com/watch?v=UKNcbNpP__w
+
+## Solution
+
 Repository: https://github.com/cpro-iiit/space-filling-curve/
 
 
