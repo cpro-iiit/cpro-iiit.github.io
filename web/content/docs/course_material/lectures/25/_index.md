@@ -30,6 +30,7 @@ Learn about Hilbert Space filling curves here:
   Learn how programing, discrete maths, real analsis comes together to define Space filling curves.  
 - https://www.youtube.com/watch?v=x-DgL49CFlM
 - https://www.youtube.com/watch?v=v99dsVBE4xQ
+- https://www.youtube.com/watch?v=xfuvkGSk8hs
 
 Read: 
 - https://arxiv.org/abs/2501.04705
