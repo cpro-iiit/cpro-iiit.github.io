@@ -41,6 +41,10 @@ Go through bellow:
 - Generative AI: https://arxiv.org/html/2509.26538v1#S3
 - Google Maps: https://blog.christianperone.com/2015/08/googles-s2-geometry-on-the-sphere-cells-and-hilbert-curve/?a=2
 - https://www.youtube.com/watch?v=OcUKFIjhKu0
+- GPUs:
+    - https://developer.nvidia.com/blog/thinking-parallel-part-iii-tree-construction-gpu/
+    - https://ieeexplore.ieee.org/document/7836590
+    
 
 
 ## Student Exercises
