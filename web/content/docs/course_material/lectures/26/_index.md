@@ -1,8 +1,8 @@
 ---
-title: "L35: Conclude"
+title: "L26: Conclude"
 bookHidden: false
 marp: true
-header: 'CS0.101 Computer Programming (Monsoon 24)'
+header: 'CS0.101 Computer Programming (Monsoon 25)'
 revealjs_config:
   slideNumber: true
 ---
