@@ -92,6 +92,8 @@ https://en.wikipedia.org/wiki/Romanesco_broccoli
 
 ![width:100px](/images/mcmjul1.gif) ![width:250px](/images/madelbrot.jpg)
 
+https://cpro-iiit.github.io/docs/course_material/projects/practice/#project-9---fractals 
+
 https://en.wikipedia.org/wiki/Fractal  
 https://en.wikipedia.org/wiki/Mandelbrot_set  
 https://en.wikipedia.org/wiki/Julia_set  
