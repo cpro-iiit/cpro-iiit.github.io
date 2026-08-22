@@ -28,6 +28,8 @@ Vaibhav Wadhwani | vaibhav.wadhwani@students.iiit.ac.in | Thursday 5:15-6:15 PM 
 
 ## Sec B
 
+Kushagra Trivedi | kushagra.trivedi@students.iiit.ac.in | Monday 1-2 PM | VC
+
 Sarthak Mishra | sarthak.m@research.iiit.ac.in | Monday 5-6 PM | LSI (T-Hub 4th Floor)
 
 Vishesh Singhal | vishesh.singhal@research.iiit.ac.in | Thursday 5-6 PM | LSI, THub 4th floor
@@ -37,6 +39,8 @@ Naman Aggarwal  | naman.aggarwal@students.iiit.ac.in | Monday 7-8 PM | Workspace
 Ojas Kataria | ojas.kataria@research.iiit.ac.in | Friday 3-4 PM | KCIS 2nd Floor (LTRC-MTNLP)
 
 Maithily Bhala | maithily.bhala@research.iiit.ac.in | Monday 2-3 PM | LSI (T-Hub 4th Floor)
+
+Jai Aakash | jaiaakash.g@students.iiit.ac.in | Wednesday 2-3 PM | MLL, KCIS 3rd Floor
 
 ## Sec C
 
