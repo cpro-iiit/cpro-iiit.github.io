@@ -7,11 +7,19 @@ footer: '![width:100px](IIIT_Hyderabad_Logo.jpg)'
 
 # Lab Practice Problems
 
-## Nested For Loops
+## For and While Loops
 
-https://www.geeksforgeeks.org/c/pattern-programs-in-c/
+[Pattern Programs](https://www.geeksforgeeks.org/c/pattern-programs-in-c/)
 
-## Frequency Arrays
+[Physics_vala](https://oj-test.iiit.ac.in/problem/cprosecaq1lab2)
+
+[Satvik Loves Palindromes](https://oj-test.iiit.ac.in/problem/cpro25sbl2q2)
+
+[Series](https://oj-test.iiit.ac.in/problem/cpro25lab2q1sectionc)
+
+[Number Theory](https://oj-test.iiit.ac.in/problem/cpro25lab2q2sectionc)
+
+<!-- ## Frequency Arrays
 
 https://leetcode.com/problems/count-elements-with-maximum-frequency/description/
 
@@ -135,4 +143,4 @@ https://cses.fi/problemset/task/1622
 
 https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/?envType=problem-list-v2&envId=string
 
-https://leetcode.com/problems/valid-palindrome/description/?envType=problem-list-v2&envId=string
+https://leetcode.com/problems/valid-palindrome/description/?envType=problem-list-v2&envId=string -->
