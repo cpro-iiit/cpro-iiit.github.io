@@ -1,6 +1,6 @@
 ---
 title: "Grading Scheme"
-bookHidden: false
+bookHidden: true
 weight: 7
 marp: false
 header: 'CS0.101 Computer Programming (Monsoon 24)'

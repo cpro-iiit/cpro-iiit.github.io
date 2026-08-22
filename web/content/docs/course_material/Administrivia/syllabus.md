@@ -1,6 +1,6 @@
 ---
 title: "Syllabus"
-bookHidden: false
+bookHidden: true
 weight: 2
 marp: false
 header: 'CS0.101 Computer Programming (Monsoon 24)'
