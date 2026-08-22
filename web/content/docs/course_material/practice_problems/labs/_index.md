@@ -7,7 +7,7 @@ footer: '![width:100px](IIIT_Hyderabad_Logo.jpg)'
 
 # Lab Practice Problems
 
-## For and While Loops
+## For and While Loops [Lab 2]
 
 [Pattern Programs](https://www.geeksforgeeks.org/c/pattern-programs-in-c/)
 

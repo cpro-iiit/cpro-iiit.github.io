@@ -1,5 +1,6 @@
 ---
 title: Installation (GDB, Valgrind)
+bookHidden: true
 menu:
   after:
     name: install

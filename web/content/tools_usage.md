@@ -1,5 +1,6 @@
 ---
 title: GDB Valgrind MakeFile Usage
+bookHidden: true
 menu:
   after:
     name: gdb valgrind
