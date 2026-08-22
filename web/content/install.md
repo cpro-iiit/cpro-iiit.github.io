@@ -1,9 +1,5 @@
 ---
 title: Installation (GDB, Valgrind)
-menu:
-  after:
-    name: install
-    weight: 9
 bookHidden: true
 ---
 

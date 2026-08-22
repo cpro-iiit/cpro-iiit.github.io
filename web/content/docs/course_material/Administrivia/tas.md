@@ -40,6 +40,8 @@ Maithily Bhala | maithily.bhala@research.iiit.ac.in | Monday 2-3 PM | LSI (T-Hub
 
 ## Sec C
 
+Vansh Agarwal | vansh.agarwal@students.iiit.ac.in | Saturday 1-2 PM | RRC, T-Hub 4th floor
+
 Anshul Bhagwat | anshulkrishnadas.b@research.iiit.ac.in | Tuesday 4-5 PM | KCIS 2nd floor (LTRC, MTNLP)
 
 Shreeprabhas Enugandla | shreeprabhas.e@students.iiit.ac.in | Saturday 1-2 PM | Workspace Blueroom

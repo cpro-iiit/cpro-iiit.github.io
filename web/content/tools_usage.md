@@ -1,9 +1,5 @@
 ---
 title: GDB Valgrind MakeFile Usage
-menu:
-  after:
-    name: gdb valgrind
-    weight: 9
 bookHidden: true
 ---
 
