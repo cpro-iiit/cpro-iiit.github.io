@@ -1,6 +1,6 @@
 ---
 title: "Teaching Assistants"
-bookHidden: true
+bookHidden: false
 weight: 6
 marp: false
 header: 'CS0.101 Computer Programming (Monsoon 24)'
