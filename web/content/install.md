@@ -1,10 +1,10 @@
 ---
 title: Installation (GDB, Valgrind)
-bookHidden: true
 menu:
   after:
     name: install
     weight: 9
+bookHidden: true
 ---
 
 # 🧰 Installing `GDB`, `Make` and `Valgrind`  on macOS and Windows
