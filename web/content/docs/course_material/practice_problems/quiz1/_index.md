@@ -1,6 +1,6 @@
 ---
 title: "Quiz 1 Practice Problems"
-bookHidden: true
+bookHidden: false
 header: 'CS0.101 Computer Programming (Monsoon 24)'
 footer: '![width:100px](IIIT_Hyderabad_Logo.jpg)'
 ---
