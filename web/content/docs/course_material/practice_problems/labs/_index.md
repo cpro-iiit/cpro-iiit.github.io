@@ -7,7 +7,7 @@ footer: '![width:100px](IIIT_Hyderabad_Logo.jpg)'
 
 # Lab Practice Problems
 
-## For and While Loops [Lab 2]
+## Quiz1 Syllabus [Lab 2]
 
 [Pattern Programs](https://www.geeksforgeeks.org/c/pattern-programs-in-c/)
 
@@ -18,6 +18,14 @@ footer: '![width:100px](IIIT_Hyderabad_Logo.jpg)'
 [Series](https://oj-test.iiit.ac.in/problem/cpro25lab2q1sectionc)
 
 [Number Theory](https://oj-test.iiit.ac.in/problem/cpro25lab2q2sectionc)
+
+[Theatre Square](https://codeforces.com/problemset/problem/1/A)
+
+[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/description/)
+
+[Reverse Bits](https://leetcode.com/problems/reverse-bits/description/)
+
+[Powers of Three](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/description/)
 
 <!-- ## Frequency Arrays
 
