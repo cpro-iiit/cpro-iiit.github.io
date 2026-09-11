@@ -11,14 +11,6 @@ footer: '![width:100px](IIIT_Hyderabad_Logo.jpg)'
 
 [Pattern Programs](https://www.geeksforgeeks.org/c/pattern-programs-in-c/)
 
-[Physics_vala](https://oj-test.iiit.ac.in/problem/cprosecaq1lab2)
-
-[Satvik Loves Palindromes](https://oj-test.iiit.ac.in/problem/cpro25sbl2q2)
-
-[Series](https://oj-test.iiit.ac.in/problem/cpro25lab2q1sectionc)
-
-[Number Theory](https://oj-test.iiit.ac.in/problem/cpro25lab2q2sectionc)
-
 [Theatre Square](https://codeforces.com/problemset/problem/1/A)
 
 [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/description/)
@@ -27,13 +19,27 @@ footer: '![width:100px](IIIT_Hyderabad_Logo.jpg)'
 
 [Powers of Three](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/description/)
 
-<!-- ## Frequency Arrays
+## 1D Arrays
 
-https://leetcode.com/problems/count-elements-with-maximum-frequency/description/
+[Move Zeroes](https://leetcode.com/problems/move-zeroes/description/?utm_source=chatgpt.com)
 
-https://oj-test.iiit.ac.in/problem/dheerutut
+[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/?utm_source=chatgpt.com)
 
-https://leetcode.com/problems/valid-anagram/description/
+## 2D Arrays
+
+[Hourglass](http://hackerrank.com/challenges/2d-array/problem?isFullScreen=true)
+
+[Search in 2D Matrix](https://www.geeksforgeeks.org/dsa/searching-algorithms-for-a-2d-arrays-matrix/)
+
+[Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/description/)
+
+## Frequency Arrays
+
+[Count elements with maximum Frequency](https://leetcode.com/problems/count-elements-with-maximum-frequency/description/)
+
+[Valid Anagram](https://leetcode.com/problems/valid-anagram/description/)
+
+<!-- 
 
 ## Two Pointers
 
@@ -44,12 +50,6 @@ https://leetcode.com/problems/reverse-vowels-of-a-string/description/
 https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
 
 https://leetcode.com/problems/valid-palindrome/description/
-
-## 2D Arrays
-
-http://hackerrank.com/challenges/2d-array/problem?isFullScreen=true
-
-https://www.geeksforgeeks.org/dsa/searching-algorithms-for-a-2d-arrays-matrix/
 
 ## Sorting
 
