@@ -19,13 +19,15 @@ footer: '![width:100px](IIIT_Hyderabad_Logo.jpg)'
 
 [Powers of Three](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/description/)
 
-## 1D Arrays
+## Arrays [Lab 3]
 
-[Move Zeroes](https://leetcode.com/problems/move-zeroes/description/?utm_source=chatgpt.com)
+### 1D Arrays
 
-[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/?utm_source=chatgpt.com)
+[Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)
 
-## 2D Arrays
+[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/)
+
+### 2D Arrays
 
 [Hourglass](http://hackerrank.com/challenges/2d-array/problem?isFullScreen=true)
 
@@ -33,11 +35,21 @@ footer: '![width:100px](IIIT_Hyderabad_Logo.jpg)'
 
 [Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/description/)
 
-## Frequency Arrays
+### Frequency Arrays
 
 [Count elements with maximum Frequency](https://leetcode.com/problems/count-elements-with-maximum-frequency/description/)
 
 [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/)
+
+## Strings [Lab 4]
+
+https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/?envType=problem-list-v2&envId=string
+
+https://leetcode.com/problems/valid-palindrome/description/?envType=problem-list-v2&envId=string
+
+https://cses.fi/problemset/task/1755/
+
+https://cses.fi/problemset/task/1753/?utm_source=chatgpt.com
 
 <!-- 
 
@@ -145,10 +157,4 @@ https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/?en
 
 https://leetcode.com/problems/remove-linked-list-elements/description/?envType=problem-list-v2&envId=linked-list
 
-## Strings
-
-https://cses.fi/problemset/task/1622
-
-https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/?envType=problem-list-v2&envId=string
-
-https://leetcode.com/problems/valid-palindrome/description/?envType=problem-list-v2&envId=string -->
+ -->
