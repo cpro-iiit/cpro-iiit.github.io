@@ -49,7 +49,7 @@ https://leetcode.com/problems/valid-palindrome/description/?envType=problem-list
 
 https://cses.fi/problemset/task/1755/
 
-https://cses.fi/problemset/task/1753/?utm_source=chatgpt.com
+https://cses.fi/problemset/task/1753
 
 <!-- 
 
