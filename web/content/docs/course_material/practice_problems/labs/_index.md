@@ -43,13 +43,13 @@ footer: '![width:100px](IIIT_Hyderabad_Logo.jpg)'
 
 ## Strings [Lab 4]
 
-https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/?envType=problem-list-v2&envId=string
+[Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/?envType=problem-list-v2&envId=string)
 
-https://leetcode.com/problems/valid-palindrome/description/?envType=problem-list-v2&envId=string
+[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/description/?envType=problem-list-v2&envId=string)
 
-https://cses.fi/problemset/task/1755/
+[Palindrome Reorder](https://cses.fi/problemset/task/1755/)
 
-https://cses.fi/problemset/task/1753
+[String Matching](https://cses.fi/problemset/task/1753)
 
 <!-- 
 
