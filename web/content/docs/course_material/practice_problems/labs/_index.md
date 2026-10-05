@@ -51,6 +51,19 @@ footer: '![width:100px](IIIT_Hyderabad_Logo.jpg)'
 
 [String Matching](https://cses.fi/problemset/task/1753)
 
+## n^2 Sorting [Lab 5]
+
+[Sort Colors](https://leetcode.com/problems/sort-colors/description/)
+
+[Selection Sort](https://www.geeksforgeeks.org/problems/selection-sort/1)
+
+[Bubble Sort](https://www.geeksforgeeks.org/problems/bubble-sort/1)
+
+[Insertion Sort Part 1](https://www.hackerrank.com/challenges/insertionsort1/problem)
+
+[Insertion Sort Part 2](https://www.hackerrank.com/challenges/insertionsort2/problem)
+
+
 <!-- 
 
 ## Two Pointers
@@ -62,12 +75,6 @@ https://leetcode.com/problems/reverse-vowels-of-a-string/description/
 https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
 
 https://leetcode.com/problems/valid-palindrome/description/
-
-## Sorting
-
-https://oj-test.iiit.ac.in/problem/clab3q2
-
-https://leetcode.com/problems/sort-colors/description/
 
 ## Recursion
 
