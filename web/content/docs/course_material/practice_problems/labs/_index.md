@@ -63,7 +63,7 @@ footer: '![width:100px](IIIT_Hyderabad_Logo.jpg)'
 
 [Insertion Sort Part 2](https://www.hackerrank.com/challenges/insertionsort2/problem)
 
-## Midlab Practice
+## MIDLAB
 
 [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)
 
