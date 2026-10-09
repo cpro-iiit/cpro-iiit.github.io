@@ -63,6 +63,19 @@ footer: '![width:100px](IIIT_Hyderabad_Logo.jpg)'
 
 [Insertion Sort Part 2](https://www.hackerrank.com/challenges/insertionsort2/problem)
 
+## Midlab Practice
+
+[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)
+
+[Increasing Array](https://cses.fi/problemset/task/1094)
+
+[Palindrome Reorder](https://cses.fi/problemset/task/1755)
+
+[Football](https://codeforces.com/problemset/problem/43/A)
+
+[Twins](https://codeforces.com/problemset/problem/160/A)
+
+[Ternary Logic](https://codeforces.com/contest/136/problem/B)
 
 <!-- 
 
