@@ -1,6 +1,6 @@
 baseURL = 'https://cpro-iiit.github.io'
 languageCode = 'en-us'
-title = 'CPro Mon 25'
+title = 'CPro Mon 26'
 theme = 'hugo-book'
 disablePathToLower = true
 enableGitInfo = true

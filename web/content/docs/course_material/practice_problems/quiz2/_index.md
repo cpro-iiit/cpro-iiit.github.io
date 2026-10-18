@@ -1,11 +1,11 @@
 ---
 title: "Quiz 2 Practice Problems"
-bookHidden: true
+bookHidden: false
 header: 'CS0.101 Computer Programming (Monsoon 24)'
 footer: '![width:100px](IIIT_Hyderabad_Logo.jpg)'
 ---
 
-# Quiz-2 Practice Problems
+<!-- # Quiz-2 Practice Problems
 
 ## OJ
 
@@ -17,7 +17,7 @@ https://oj-test.iiit.ac.in/problem/sahilbank [Structs + Strings]
 
 https://oj-test.iiit.ac.in/problem/cric [Structs + qsort]
 
-https://oj-test.iiit.ac.in/problem/jaggedarray [Malloc + Pointers]
+https://oj-test.iiit.ac.in/problem/jaggedarray [Malloc + Pointers] -->
 
 ## PYQ
 
