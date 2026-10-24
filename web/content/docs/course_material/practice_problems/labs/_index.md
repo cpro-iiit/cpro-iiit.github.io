@@ -77,6 +77,24 @@ footer: '![width:100px](IIIT_Hyderabad_Logo.jpg)'
 
 [Ternary Logic](https://codeforces.com/contest/136/problem/B)
 
+## Recursion + Complete Search (Lab 6)
+
+Resource 1 - [USACO Guide](https://usaco.guide/bronze/complete-rec?lang=cpp)
+
+Resource 2 - [Tower of Hanoi](https://www.tutorialspoint.com/data_structures_algorithms/tower_of_hanoi.htm)
+
+Problems -
+
+[Tower of Hanoi](https://cses.fi/problemset/task/2165?)
+
+[Subsets](https://leetcode.com/problems/subsets/description/)
+
+[Apple Division](https://cses.fi/problemset/task/1623?utm_source=chatgpt.com)
+
+[Creating Strings](https://cses.fi/problemset/task/1622)
+
+[Chessboard and Queens](https://cses.fi/ckvo8q5wh/task/1624)
+
 <!-- 
 
 ## Two Pointers
@@ -88,20 +106,6 @@ https://leetcode.com/problems/reverse-vowels-of-a-string/description/
 https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
 
 https://leetcode.com/problems/valid-palindrome/description/
-
-## Recursion
-
-https://oj-test.iiit.ac.in/problem/cpro25sbl6q3
-
-https://oj-test.iiit.ac.in/problem/cpromidsemsecbhard
-
-https://oj-test.iiit.ac.in/problem/cpro25labmidmoderate
-
-https://leetcode.com/problems/generate-parentheses/description/
-
-https://leetcode.com/problems/n-queens/description/
-
-https://www.tutorialspoint.com/data_structures_algorithms/tower_of_hanoi.htm
 
 ## Merge Sort and qsort
 
