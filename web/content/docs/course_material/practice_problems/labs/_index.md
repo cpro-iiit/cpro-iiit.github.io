@@ -95,19 +95,17 @@ Problems -
 
 [Chessboard and Queens](https://cses.fi/ckvo8q5wh/task/1624)
 
-## Dynamic Programming (Lab 7)
+## Memoization (Lab 7)
 
-This is a contest on Atcoder having 26 DP Problems - https://atcoder.jp/contests/dp/tasks. The initial few ones (first 4) are worth solving for now.
+Resource 1 - [Youtube](- https://youtube.com/playlist?list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&si=W5Is30SdN9YdV4j6)
 
-CSES DP (Dynamic Programming) Section is also a great place to practice DP. For this week, you can attempt these problems -
+[Dice Combinations](https://cses.fi/problemset/task/1633)
 
-https://cses.fi/problemset/task/1633
+[Minimizing Coints](https://cses.fi/problemset/task/1634)
 
-https://cses.fi/problemset/task/1634
+[Coin Combinations I](https://cses.fi/problemset/task/1635)
 
-https://cses.fi/problemset/task/1635
-
-https://cses.fi/problemset/task/1638
+[Grid Paths I](https://cses.fi/problemset/task/1638)
 
 <!-- 
 
