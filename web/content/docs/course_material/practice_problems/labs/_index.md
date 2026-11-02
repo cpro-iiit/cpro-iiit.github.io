@@ -97,7 +97,7 @@ Problems -
 
 ## Memoization (Lab 7)
 
-Resource 1 - [Youtube](- https://youtube.com/playlist?list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&si=W5Is30SdN9YdV4j6)
+Resource 1 - [Youtube](https://youtube.com/playlist?list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&si=W5Is30SdN9YdV4j6)
 
 [Dice Combinations](https://cses.fi/problemset/task/1633)
 
