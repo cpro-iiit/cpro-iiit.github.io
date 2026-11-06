@@ -107,6 +107,16 @@ Resource 1 - [Youtube](https://youtube.com/playlist?list=PLgUwDviBIf0qUlt5H_kiKY
 
 [Grid Paths I](https://cses.fi/problemset/task/1638)
 
+## Pointers (Qsort, Structs, Malloc, Strings etc) (Lab 8)
+
+[Sort the people](https://leetcode.com/problems/sort-the-people/description/)
+
+[Creating Strings](https://cses.fi/problemset/task/1622)
+
+[Variable Sized Arrays](https://www.hackerrank.com/challenges/variable-sized-arrays/problem?)
+
+[Group Anagrams](https://leetcode.com/problems/group-anagrams/description/?)
+
 <!-- 
 
 ## Two Pointers
@@ -138,16 +148,6 @@ http://cses.fi/problemset/task/1074
 https://cses.fi/problemset/task/1090
 
 https://cses.fi/problemset/task/1084
-
-## Pointers + Structs
-
-https://leetcode.com/problems/sort-the-people/description/
-
-https://oj-test.iiit.ac.in/problem/cpro25q
-
-https://oj-test.iiit.ac.in/problem/cpro25lab7secc
-
-https://cses.fi/problemset/task/1622
 
 ## Binary Search
 
