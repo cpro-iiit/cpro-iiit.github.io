@@ -131,8 +131,6 @@ https://leetcode.com/problems/valid-palindrome/description/
 
 ## Merge Sort and qsort
 
-https://leetcode.com/problems/sort-the-people/description/
-
 https://leetcode.com/problems/sort-an-array/description/
 
 https://cses.fi/problemset/task/1619
