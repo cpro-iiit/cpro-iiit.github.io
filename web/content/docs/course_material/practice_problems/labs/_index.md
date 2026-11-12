@@ -117,57 +117,49 @@ Resource 1 - [Youtube](https://youtube.com/playlist?list=PLgUwDviBIf0qUlt5H_kiKY
 
 [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/?)
 
-<!-- 
+## Misc. Topics (Lab 9)
 
-## Two Pointers
-
-https://leetcode.com/problems/reverse-string/description/
-
-https://leetcode.com/problems/reverse-vowels-of-a-string/description/
-
-https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
-
-https://leetcode.com/problems/valid-palindrome/description/
-
-## Merge Sort and qsort
-
-https://leetcode.com/problems/sort-an-array/description/
-
-https://cses.fi/problemset/task/1619
-
-https://www.hackerrank.com/challenges/ctci-merge-sort/problem
-
-## Greedy + Sorting
-
-https://codeforces.com/gym/102951/problem/B 
-
-http://cses.fi/problemset/task/1074
-
-https://cses.fi/problemset/task/1090
-
-https://cses.fi/problemset/task/1084
-
-## Binary Search
+### Binary Search
 
 Resources - 
 
-https://usaco.guide/silver/binary-search?lang=cpp
+https://usaco.guide/silver/binary-search-sorted-array?lang=cpp
 
 https://usaco.guide/silver/binary-search?lang=cpp
 
 Problems - 
 
-https://usaco.org/index.php?page=viewproblem2&cpid=666
+[Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/)
 
-https://www.spoj.com/problems/AGGRCOW/
+[Factory Machines](https://cses.fi/problemset/task/1620)
 
-https://cses.fi/problemset/task/1620
-
-## Prefix Sums
+### Prefix Sums
 
 Resource - https://usaco.guide/silver/prefix-sums?lang=cpp
 
-Problem - https://judge.yosupo.jp/problem/static_range_sum
+Problem - [Static Range Sum](https://judge.yosupo.jp/problem/static_range_sum)
+
+### Merge Sort
+
+[Sort an Array](https://leetcode.com/problems/sort-an-array/description/)
+
+[Counting Inversions](https://www.hackerrank.com/challenges/ctci-merge-sort/problem)
+
+### Greedy Sorting
+
+[Studying Algorithms](https://codeforces.com/gym/102951/problem/B)
+
+[Stick Lengths](http://cses.fi/problemset/task/1074)
+
+[Ferris Wheel](https://cses.fi/problemset/task/1090)
+
+### Two Pointers
+
+[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/description/)
+
+[Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/)
+
+<!-- 
 
 ## Linked List
 
